@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
 <head>
 <meta charset="utf-8"> <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -206,6 +206,9 @@ AJAX - override default behaviour of image link with lbx-ajax<br>
 </div>
 </section>
 </li>
+<li>
+<a class="wb-lbx" title="AJAX - Content fragment" href="ajax/ajax4-en.html#modal">AJAX - Content Fragment</a>
+</li>
 </ul>
 <section>
 <h4>Code</h4>
@@ -254,7 +257,9 @@ AJAX - override default behaviour of image link with lbx-ajax<br>
 &lt;script&gt;
 // JavaScript code required to initialise multimedia player in lightbox
 $( ".wb-lbx" ).on( "mfpAjaxContentAdded", function(e) {
-	$( ".mfp-content" ).find( ".wb-mltmd" ).trigger( "wb-init.wb-mltmd" );
+	setTimeout(function() {
+        $( ".mfp-content" ).find( ".wb-mltmd" ).trigger( "wb-init.wb-mltmd" );
+    }, 0);
 });
 &lt;/script&gt;
 </code></pre>
