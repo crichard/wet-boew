@@ -7496,8 +7496,7 @@ table.dataTable {
 	 */ }
   .wb-tabs > .tabpanels {
     overflow: hidden;
-    position: relative;
-    clear: right; }
+    position: relative; }
   .wb-tabs [role="tablist"] {
     list-style: none;
     margin: 0;
