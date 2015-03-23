@@ -7570,10 +7570,15 @@ table.dataTable {
         top: 1px; }
   .wb-tabs.carousel-s2 {
     background: #eee;
-    /*padding-bottom: 4.375em;*/ }
+    /*padding-bottom: 4.375em;*/
+    /*display: flex;
+		flex-flow: column-reverse;*/
+    display: table;
+    width: 100%; }
     .wb-tabs.carousel-s2 [role="tablist"] {
       bottom: 0;
       /*position: absolute;*/
+      display: table-footer-group;
       width: 100%; }
       .wb-tabs.carousel-s2 [role="tablist"] li {
         background: transparent;
