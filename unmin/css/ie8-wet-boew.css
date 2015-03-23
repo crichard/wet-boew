@@ -7177,7 +7177,8 @@ table.dataTable {
 	 */ }
   .wb-tabs > .tabpanels {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    clear: right; }
   .wb-tabs [role="tablist"] {
     list-style: none;
     margin: 0;
@@ -7250,10 +7251,10 @@ table.dataTable {
         top: 1px; }
   .wb-tabs.carousel-s2 {
     background: #eee;
-    padding-bottom: 4.375em; }
+    /*padding-bottom: 4.375em;*/ }
     .wb-tabs.carousel-s2 [role="tablist"] {
       bottom: 0;
-      position: absolute;
+      /*position: absolute;*/
       width: 100%; }
       .wb-tabs.carousel-s2 [role="tablist"] li {
         background: transparent;
@@ -7944,23 +7945,21 @@ details.alert:not([open]) {
     width: 100%; }
   .wb-tabs.carousel-s2 [role="tablist"] li.prv, .wb-tabs.carousel-s2 [role="tablist"] li.nxt {
     margin-right: 0; }
-  .wb-tabs.carousel-s2 {
-    padding-bottom: 8.375em; }
-    .wb-tabs.carousel-s2 [role="tablist"] li.prv {
-      margin-left: 0; }
-      .wb-tabs.carousel-s2 [role="tablist"] li.prv a {
-        padding: 10px 0 10px 0.4em; }
-    .wb-tabs.carousel-s2 [role="tablist"] li.nxt a {
-      padding: 10px 0; }
-    .wb-tabs.carousel-s2 [role="tablist"] li.tab-count {
-      font-size: 0.9em;
-      margin-right: 5px; }
-    .wb-tabs.carousel-s2 [role="tablist"] li.plypause {
-      margin-right: 2%; }
-      .wb-tabs.carousel-s2 [role="tablist"] li.plypause a {
-        font-size: 1.3em;
-        margin-right: 0;
-        padding: 12px 10px 7px; } }
+  .wb-tabs.carousel-s2 [role="tablist"] li.prv {
+    margin-left: 0; }
+    .wb-tabs.carousel-s2 [role="tablist"] li.prv a {
+      padding: 10px 0 10px 0.4em; }
+  .wb-tabs.carousel-s2 [role="tablist"] li.nxt a {
+    padding: 10px 0; }
+  .wb-tabs.carousel-s2 [role="tablist"] li.tab-count {
+    font-size: 0.9em;
+    margin-right: 5px; }
+  .wb-tabs.carousel-s2 [role="tablist"] li.plypause {
+    margin-right: 2%; }
+    .wb-tabs.carousel-s2 [role="tablist"] li.plypause a {
+      font-size: 1.3em;
+      margin-right: 0;
+      padding: 12px 10px 7px; } }
 
 /* Extra-small view */
 @media screen and (min-width: 480px) and (max-width: 767px) {
