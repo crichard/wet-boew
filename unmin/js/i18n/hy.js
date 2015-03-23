@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "hy",
 	"lang-native": "Հայերեն",
+	add: "ավելացնել",
 	all: "Բոլորը",
 	tphp: "Էջի սկիզբ",
 	load: "բեռնման ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Նախորդ (ձախ սլաքների բանալին)",
 	first: "Առաջին",
 	last: "Անցյալ",
+	page: "Page",
 	"srch-menus": "Որոնել եւ Ընտրացանկերը",
 	email: "Էլեկտրոնային փոստ",
 	"menu-close": "Փակել մենյուն",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Արեւելք",
 	"geo-aoi-south": "Հարավ",
 	"geo-aoi-west": "Արեւմուտք",
-	"geo-aoi-instructions": "Ուրվագծել տարածք քարտեզի վրա&#44; կամ մուտքագրել մանրամասները ստորեւ&#44; ապա սեղմեք «Նկարել» կոճակը.",
+	"geo-aoi-instructions": "Ոչ ոքի վանդակը քարտեզի վրա, կամ մուտք գործել համակարգում ստորեւ, եւ սեղմեք \"Ավելացնել\" կոճակը:",
 	"geo-aoi-btndraw": "Նկարել",
 	"geo-aoi-btnclear": "Հեռացնել",
 	"geo-geoloc-btn": "Մեծացնել ձեր զբաղեցրած պաշտոնը",
 	"geo-geoloc-fail": "Որտեղից ձախողվեց. Խնդրում ենք համոզվել, որ այդ վայրում ծառայություններ հնարավորություն.",
 	"geo-geoloc-uncapable": "Տեղայնացման չի ապահովվում է ձեր բրոուզերում.",
+	"geo-lgnd-grphc": "Լեգենդ արվեստ քարտեզ շերտ.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "հիմնական HTML տարբերակ",
 	"wb-enable": "Դնել",
@@ -213,4 +216,4 @@ wb.i18nDict = {
 	"tmpl-signin": "Գրանցվել"
 };
 
-})( wb );
+} )( wb );

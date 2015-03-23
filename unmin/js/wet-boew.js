@@ -1,13 +1,13 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-elem_details-elem_progress_meter-mathml-cors-load-mq-css3-input-inputtypes-svg-cssclasses-csstransitions-fontface-backgroundsize-borderimage-teststyles-testprops-testallprops-hasevents-prefixes-domprefixes
  */
-;window.Modernizr=function(e,t,n){function L(e){f.cssText=e}function A(e,t){return L(p.join(e+";")+(t||""))}function O(e,t){return typeof e===t}function M(e,t){return!!~(""+e).indexOf(t)}function _(e,t){for(var r in e){var i=e[r];if(!M(i,"-")&&f[i]!==n)return t=="pfx"?i:!0}return!1}function D(e,t,r){for(var i in e){var s=t[e[i]];if(s!==n)return r===!1?e[i]:O(s,"function")?s.bind(r||t):s}return!1}function P(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),i=(e+" "+v.join(r+" ")+r).split(" ");return O(t,"string")||O(t,"undefined")?_(i,t):(i=(e+" "+m.join(r+" ")+r).split(" "),D(i,t,n))}function H(){i.input=function(n){for(var r=0,i=n.length;r<i;r++)w[n[r]]=n[r]in l;return w.list&&(w.list=!!t.createElement("datalist")&&!!e.HTMLDataListElement),w}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),i.inputtypes=function(e){for(var r=0,i,s,u,a=e.length;r<a;r++)l.setAttribute("type",s=e[r]),i=l.type!=="text",i&&(l.value=c,l.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(s)&&l.style.WebkitAppearance!==n?(o.appendChild(l),u=t.defaultView,i=u.getComputedStyle&&u.getComputedStyle(l,null).WebkitAppearance!=="textfield"&&l.offsetHeight!==0,o.removeChild(l)):/^(search|tel)$/.test(s)||(/^(url|email)$/.test(s)?i=l.checkValidity&&l.checkValidity()===!1:i=l.value!=c)),b[e[r]]=!!i;return b}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var r="2.8.3",i={},s=!0,o=t.documentElement,u="modernizr",a=t.createElement(u),f=a.style,l=t.createElement("input"),c=":)",h={}.toString,p=" -webkit- -moz- -o- -ms- ".split(" "),d="Webkit Moz O ms",v=d.split(" "),m=d.toLowerCase().split(" "),g={svg:"http://www.w3.org/2000/svg"},y={},b={},w={},E=[],S=E.slice,x,T=function(e,n,r,i){var s,a,f,l,c=t.createElement("div"),h=t.body,p=h||t.createElement("body");if(parseInt(r,10))while(r--)f=t.createElement("div"),f.id=i?i[r]:u+(r+1),c.appendChild(f);return s=["&#173;",'<style id="s',u,'">',e,"</style>"].join(""),c.id=u,(h?c:p).innerHTML+=s,p.appendChild(c),h||(p.style.background="",p.style.overflow="hidden",l=o.style.overflow,o.style.overflow="hidden",o.appendChild(p)),a=n(c,e),h?c.parentNode.removeChild(c):(p.parentNode.removeChild(p),o.style.overflow=l),!!a},N=function(t){var n=e.matchMedia||e.msMatchMedia;if(n)return n(t)&&n(t).matches||!1;var r;return T("@media "+t+" { #"+u+" { position: absolute; } }",function(t){r=(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle)["position"]=="absolute"}),r},C={}.hasOwnProperty,k;!O(C,"undefined")&&!O(C.call,"undefined")?k=function(e,t){return C.call(e,t)}:k=function(e,t){return t in e&&O(e.constructor.prototype[t],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(t){var n=this;if(typeof n!="function")throw new TypeError;var r=S.call(arguments,1),i=function(){if(this instanceof i){var e=function(){};e.prototype=n.prototype;var s=new e,o=n.apply(s,r.concat(S.call(arguments)));return Object(o)===o?o:s}return n.apply(t,r.concat(S.call(arguments)))};return i}),y.backgroundsize=function(){return P("backgroundSize")},y.borderimage=function(){return P("borderImage")},y.csstransitions=function(){return P("transition")},y.fontface=function(){var e;return T('@font-face {font-family:"font";src:url("https://")}',function(n,r){var i=t.getElementById("smodernizr"),s=i.sheet||i.styleSheet,o=s?s.cssRules&&s.cssRules[0]?s.cssRules[0].cssText:s.cssText||"":"";e=/src/i.test(o)&&o.indexOf(r.split(" ")[0])===0}),e},y.svg=function(){return!!t.createElementNS&&!!t.createElementNS(g.svg,"svg").createSVGRect};for(var B in y)k(y,B)&&(x=B.toLowerCase(),i[x]=y[B](),E.push((i[x]?"":"no-")+x));return i.input||H(),i.addTest=function(e,t){if(typeof e=="object")for(var r in e)k(e,r)&&i.addTest(r,e[r]);else{e=e.toLowerCase();if(i[e]!==n)return i;t=typeof t=="function"?t():t,typeof s!="undefined"&&s&&(o.className+=" "+(t?"":"no-")+e),i[e]=t}return i},L(""),a=l=null,i._version=r,i._prefixes=p,i._domPrefixes=m,i._cssomPrefixes=v,i.mq=N,i.testProp=function(e){return _([e])},i.testAllProps=P,i.testStyles=T,o.className=o.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(s?" js "+E.join(" "):""),i}(this,this.document),function(e,t,n){function r(e){return"[object Function]"==d.call(e)}function i(e){return"string"==typeof e}function s(){}function o(e){return!e||"loaded"==e||"complete"==e||"uninitialized"==e}function u(){var e=v.shift();m=1,e?e.t?h(function(){("c"==e.t?k.injectCss:k.injectJs)(e.s,0,e.a,e.x,e.e,1)},0):(e(),u()):m=0}function a(e,n,r,i,s,a,f){function l(t){if(!d&&o(c.readyState)&&(w.r=d=1,!m&&u(),c.onload=c.onreadystatechange=null,t)){"img"!=e&&h(function(){b.removeChild(c)},50);for(var r in T[n])T[n].hasOwnProperty(r)&&T[n][r].onload()}}var f=f||k.errorTimeout,c=t.createElement(e),d=0,g=0,w={t:r,s:n,e:s,a:a,x:f};1===T[n]&&(g=1,T[n]=[]),"object"==e?c.data=n:(c.src=n,c.type=e),c.width=c.height="0",c.onerror=c.onload=c.onreadystatechange=function(){l.call(this,g)},v.splice(i,0,w),"img"!=e&&(g||2===T[n]?(b.insertBefore(c,y?null:p),h(l,f)):T[n].push(c))}function f(e,t,n,r,s){return m=0,t=t||"j",i(e)?a("c"==t?E:w,e,t,this.i++,n,r,s):(v.splice(this.i++,0,e),1==v.length&&u()),this}function l(){var e=k;return e.loader={load:f,i:0},e}var c=t.documentElement,h=e.setTimeout,p=t.getElementsByTagName("script")[0],d={}.toString,v=[],m=0,g="MozAppearance"in c.style,y=g&&!!t.createRange().compareNode,b=y?c:p.parentNode,c=e.opera&&"[object Opera]"==d.call(e.opera),c=!!t.attachEvent&&!c,w=g?"object":c?"script":"img",E=c?"script":w,S=Array.isArray||function(e){return"[object Array]"==d.call(e)},x=[],T={},N={timeout:function(e,t){return t.length&&(e.timeout=t[0]),e}},C,k;k=function(e){function t(e){var e=e.split("!"),t=x.length,n=e.pop(),r=e.length,n={url:n,origUrl:n,prefixes:e},i,s,o;for(s=0;s<r;s++)o=e[s].split("="),(i=N[o.shift()])&&(n=i(n,o));for(s=0;s<t;s++)n=x[s](n);return n}function o(e,i,s,o,u){var a=t(e),f=a.autoCallback;a.url.split(".").pop().split("?").shift(),a.bypass||(i&&(i=r(i)?i:i[e]||i[o]||i[e.split("/").pop().split("?")[0]]),a.instead?a.instead(e,i,s,o,u):(T[a.url]?a.noexec=!0:T[a.url]=1,s.load(a.url,a.forceCSS||!a.forceJS&&"css"==a.url.split(".").pop().split("?").shift()?"c":n,a.noexec,a.attrs,a.timeout),(r(i)||r(f))&&s.load(function(){l(),i&&i(a.origUrl,u,o),f&&f(a.origUrl,u,o),T[a.url]=2})))}function u(e,t){function n(e,n){if(e){if(i(e))n||(f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}),o(e,f,t,0,u);else if(Object(e)===e)for(p in h=function(){var t=0,n;for(n in e)e.hasOwnProperty(n)&&t++;return t}(),e)e.hasOwnProperty(p)&&(!n&&!--h&&(r(f)?f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}:f[p]=function(e){return function(){var t=[].slice.call(arguments);e&&e.apply(this,t),c()}}(l[p])),o(e[p],f,t,p,u))}else!n&&c()}var u=!!e.test,a=e.load||e.both,f=e.callback||s,l=f,c=e.complete||s,h,p;n(u?e.yep:e.nope,!!a),a&&n(a)}var a,f,c=this.yepnope.loader;if(i(e))o(e,0,c,0);else if(S(e))for(a=0;a<e.length;a++)f=e[a],i(f)?o(f,0,c,0):S(f)?k(f):Object(f)===f&&u(f,c);else Object(e)===e&&u(e,c)},k.addPrefix=function(e,t){N[e]=t},k.addFilter=function(e){x.push(e)},k.errorTimeout=1e4,null==t.readyState&&t.addEventListener&&(t.readyState="loading",t.addEventListener("DOMContentLoaded",C=function(){t.removeEventListener("DOMContentLoaded",C,0),t.readyState="complete"},0)),e.yepnope=l(),e.yepnope.executeStack=u,e.yepnope.injectJs=function(e,n,r,i,a,f){var l=t.createElement("script"),c,d,i=i||k.errorTimeout;l.src=e;for(d in r)l.setAttribute(d,r[d]);n=f?u:n||s,l.onreadystatechange=l.onload=function(){!c&&o(l.readyState)&&(c=1,n(),l.onload=l.onreadystatechange=null)},h(function(){c||(c=1,n(1))},i),a?l.onload():p.parentNode.insertBefore(l,p)},e.yepnope.injectCss=function(e,n,r,i,o,a){var i=t.createElement("link"),f,n=a?u:n||s;i.href=e,i.rel="stylesheet",i.type="text/css";for(f in r)i.setAttribute(f,r[f]);o||(p.parentNode.insertBefore(i,p),h(n,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))},Modernizr.addTest("details",function(){var e=document,t=e.createElement("details"),n,r,i;return"open"in t?(r=e.body||function(){var t=e.documentElement;return n=!0,t.insertBefore(e.createElement("body"),t.firstElementChild||t.firstChild)}(),t.innerHTML="<summary>a</summary>b",t.style.display="block",r.appendChild(t),i=t.offsetHeight,t.open=!0,i=i!=t.offsetHeight,r.removeChild(t),n&&r.parentNode.removeChild(r),i):!1}),Modernizr.addTest("mathml",function(){var e=!1;if(document.createElementNS){var t="http://www.w3.org/1998/Math/MathML",n=document.createElement("div");n.style.position="absolute";var r=n.appendChild(document.createElementNS(t,"math")).appendChild(document.createElementNS(t,"mfrac"));r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("xx")),r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("yy")),document.body.appendChild(n),e=n.offsetHeight>n.offsetWidth}return e}),Modernizr.addTest("progressbar",function(){return document.createElement("progress").max!==undefined}),Modernizr.addTest("meter",function(){return document.createElement("meter").max!==undefined}),Modernizr.addTest("cors",!!(window.XMLHttpRequest&&"withCredentials"in new XMLHttpRequest));
+;window.Modernizr=function(e,t,n){function L(e){f.cssText=e}function A(e,t){return L(p.join(e+";")+(t||""))}function O(e,t){return typeof e===t}function M(e,t){return!!~(""+e).indexOf(t)}function _(e,t){for(var r in e){var i=e[r];if(!M(i,"-")&&f[i]!==n)return t=="pfx"?i:!0}return!1}function D(e,t,r){for(var i in e){var s=t[e[i]];if(s!==n)return r===!1?e[i]:O(s,"function")?s.bind(r||t):s}return!1}function P(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),i=(e+" "+v.join(r+" ")+r).split(" ");return O(t,"string")||O(t,"undefined")?_(i,t):(i=(e+" "+m.join(r+" ")+r).split(" "),D(i,t,n))}function H(){i.input=function(n){for(var r=0,i=n.length;r<i;r++)w[n[r]]=n[r]in l;return w.list&&(w.list=!!t.createElement("datalist")&&!!e.HTMLDataListElement),w}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),i.inputtypes=function(e){for(var r=0,i,s,u,a=e.length;r<a;r++)l.setAttribute("type",s=e[r]),i=l.type!=="text",i&&(l.value=c,l.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(s)&&l.style.WebkitAppearance!==n?(o.appendChild(l),u=t.defaultView,i=u.getComputedStyle&&u.getComputedStyle(l,null).WebkitAppearance!=="textfield"&&l.offsetHeight!==0,o.removeChild(l)):/^(search|tel)$/.test(s)||(/^(url|email)$/.test(s)?i=l.checkValidity&&l.checkValidity()===!1:i=l.value!=c)),b[e[r]]=!!i;return b}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var r="2.8.3",i={},s=!0,o=t.documentElement,u="modernizr",a=t.createElement(u),f=a.style,l=t.createElement("input"),c=":)",h={}.toString,p=" -webkit- -moz- -o- -ms- ".split(" "),d="Webkit Moz O ms",v=d.split(" "),m=d.toLowerCase().split(" "),g={svg:"http://www.w3.org/2000/svg"},y={},b={},w={},E=[],S=E.slice,x,T=function(e,n,r,i){var s,a,f,l,c=t.createElement("div"),h=t.body,p=h||t.createElement("body");if(parseInt(r,10))while(r--)f=t.createElement("div"),f.id=i?i[r]:u+(r+1),c.appendChild(f);return s=["&#173;",'<style id="s',u,'">',e,"</style>"].join(""),c.id=u,(h?c:p).innerHTML+=s,p.appendChild(c),h||(p.style.background="",p.style.overflow="hidden",l=o.style.overflow,o.style.overflow="hidden",o.appendChild(p)),a=n(c,e),h?c.parentNode.removeChild(c):(p.parentNode.removeChild(p),o.style.overflow=l),!!a},N=function(t){var n=e.matchMedia||e.msMatchMedia;if(n)return n(t)&&n(t).matches||!1;var r;return T("@media "+t+" { #"+u+" { position: absolute; } }",function(t){r=(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle)["position"]=="absolute"}),r},C={}.hasOwnProperty,k;!O(C,"undefined")&&!O(C.call,"undefined")?k=function(e,t){return C.call(e,t)}:k=function(e,t){return t in e&&O(e.constructor.prototype[t],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(t){var n=this;if(typeof n!="function")throw new TypeError;var r=S.call(arguments,1),i=function(){if(this instanceof i){var e=function(){};e.prototype=n.prototype;var s=new e,o=n.apply(s,r.concat(S.call(arguments)));return Object(o)===o?o:s}return n.apply(t,r.concat(S.call(arguments)))};return i}),y.backgroundsize=function(){return P("backgroundSize")},y.borderimage=function(){return P("borderImage")},y.csstransitions=function(){return P("transition")},y.fontface=function(){var e;return T('@font-face {font-family:"font";src:url("https://")}',function(n,r){var i=t.getElementById("smodernizr"),s=i.sheet||i.styleSheet,o=s?s.cssRules&&s.cssRules[0]?s.cssRules[0].cssText:s.cssText||"":"";e=/src/i.test(o)&&o.indexOf(r.split(" ")[0])===0}),e},y.svg=function(){return!!t.createElementNS&&!!t.createElementNS(g.svg,"svg").createSVGRect};for(var B in y)k(y,B)&&(x=B.toLowerCase(),i[x]=y[B](),E.push((i[x]?"":"no-")+x));return i.input||H(),i.addTest=function(e,t){if(typeof e=="object")for(var r in e)k(e,r)&&i.addTest(r,e[r]);else{e=e.toLowerCase();if(i[e]!==n)return i;t=typeof t=="function"?t():t,typeof s!="undefined"&&s&&(o.className+=" "+(t?"":"no-")+e),i[e]=t}return i},L(""),a=l=null,i._version=r,i._prefixes=p,i._domPrefixes=m,i._cssomPrefixes=v,i.mq=N,i.testProp=function(e){return _([e])},i.testAllProps=P,i.testStyles=T,o.className=o.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(s?" js "+E.join(" "):""),i}(this,this.document),function(e,t,n){function r(e){return"[object Function]"==d.call(e)}function i(e){return"string"==typeof e}function s(){}function o(e){return!e||"loaded"==e||"complete"==e||"uninitialized"==e}function u(){var e=v.shift();m=1,e?e.t?h(function(){("c"==e.t?k.injectCss:k.injectJs)(e.s,0,e.a,e.x,e.e,1)},0):(e(),u()):m=0}function a(e,n,r,i,s,a,f){function l(t){if(!d&&o(c.readyState)&&(w.r=d=1,!m&&u(),c.onload=c.onreadystatechange=null,t)){"img"!=e&&h(function(){b.removeChild(c)},50);for(var r in T[n])T[n].hasOwnProperty(r)&&T[n][r].onload()}}var f=f||k.errorTimeout,c=t.createElement(e),d=0,g=0,w={t:r,s:n,e:s,a:a,x:f};1===T[n]&&(g=1,T[n]=[]),"object"==e?c.data=n:(c.src=n,c.type=e),c.width=c.height="0",c.onerror=c.onload=c.onreadystatechange=function(){l.call(this,g)},v.splice(i,0,w),"img"!=e&&(g||2===T[n]?(b.insertBefore(c,y?null:p),h(l,f)):T[n].push(c))}function f(e,t,n,r,s){return m=0,t=t||"j",i(e)?a("c"==t?E:w,e,t,this.i++,n,r,s):(v.splice(this.i++,0,e),1==v.length&&u()),this}function l(){var e=k;return e.loader={load:f,i:0},e}var c=t.documentElement,h=e.setTimeout,p=t.getElementsByTagName("script")[0],d={}.toString,v=[],m=0,g="MozAppearance"in c.style,y=g&&!!t.createRange().compareNode,b=y?c:p.parentNode,c=e.opera&&"[object Opera]"==d.call(e.opera),c=!!t.attachEvent&&!c,w=g?"object":c?"script":"img",E=c?"script":w,S=Array.isArray||function(e){return"[object Array]"==d.call(e)},x=[],T={},N={timeout:function(e,t){return t.length&&(e.timeout=t[0]),e}},C,k;k=function(e){function t(e){var e=e.split("!"),t=x.length,n=e.pop(),r=e.length,n={url:n,origUrl:n,prefixes:e},i,s,o;for(s=0;s<r;s++)o=e[s].split("="),(i=N[o.shift()])&&(n=i(n,o));for(s=0;s<t;s++)n=x[s](n);return n}function o(e,i,s,o,u){var a=t(e),f=a.autoCallback;a.url.split(".").pop().split("?").shift(),a.bypass||(i&&(i=r(i)?i:i[e]||i[o]||i[e.split("/").pop().split("?")[0]]),a.instead?a.instead(e,i,s,o,u):(T[a.url]?a.noexec=!0:T[a.url]=1,s.load(a.url,a.forceCSS||!a.forceJS&&"css"==a.url.split(".").pop().split("?").shift()?"c":n,a.noexec,a.attrs,a.timeout),(r(i)||r(f))&&s.load(function(){l(),i&&i(a.origUrl,u,o),f&&f(a.origUrl,u,o),T[a.url]=2})))}function u(e,t){function n(e,n){if(e){if(i(e))n||(f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}),o(e,f,t,0,u);else if(Object(e)===e)for(p in h=function(){var t=0,n;for(n in e)e.hasOwnProperty(n)&&t++;return t}(),e)e.hasOwnProperty(p)&&(!n&&!--h&&(r(f)?f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}:f[p]=function(e){return function(){var t=[].slice.call(arguments);e&&e.apply(this,t),c()}}(l[p])),o(e[p],f,t,p,u))}else!n&&c()}var u=!!e.test,a=e.load||e.both,f=e.callback||s,l=f,c=e.complete||s,h,p;n(u?e.yep:e.nope,!!a),a&&n(a)}var a,f,c=this.yepnope.loader;if(i(e))o(e,0,c,0);else if(S(e))for(a=0;a<e.length;a++)f=e[a],i(f)?o(f,0,c,0):S(f)?k(f):Object(f)===f&&u(f,c);else Object(e)===e&&u(e,c)},k.addPrefix=function(e,t){N[e]=t},k.addFilter=function(e){x.push(e)},k.errorTimeout=1e4,null==t.readyState&&t.addEventListener&&(t.readyState="loading",t.addEventListener("DOMContentLoaded",C=function(){t.removeEventListener("DOMContentLoaded",C,0),t.readyState="complete"},0)),e.yepnope=l(),e.yepnope.executeStack=u,e.yepnope.injectJs=function(e,n,r,i,a,f){var l=t.createElement("script"),c,d,i=i||k.errorTimeout;l.src=e;for(d in r)l.setAttribute(d,r[d]);n=f?u:n||s,l.onreadystatechange=l.onload=function(){!c&&o(l.readyState)&&(c=1,n(),l.onload=l.onreadystatechange=null)},h(function(){c||(c=1,n(1))},i),a?l.onload():p.parentNode.insertBefore(l,p)},e.yepnope.injectCss=function(e,n,r,i,o,a){var i=t.createElement("link"),f,n=a?u:n||s;i.href=e,i.rel="stylesheet",i.type="text/css";for(f in r)i.setAttribute(f,r[f]);o||(p.parentNode.insertBefore(i,p),h(n,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))},Modernizr.addTest("cors",!!(window.XMLHttpRequest&&"withCredentials"in new XMLHttpRequest)),Modernizr.addTest("details",function(){var e=document,t=e.createElement("details"),n,r,i;return"open"in t?(r=e.body||function(){var t=e.documentElement;return n=!0,t.insertBefore(e.createElement("body"),t.firstElementChild||t.firstChild)}(),t.innerHTML="<summary>a</summary>b",t.style.display="block",r.appendChild(t),i=t.offsetHeight,t.open=!0,i=i!=t.offsetHeight,r.removeChild(t),n&&r.parentNode.removeChild(r),i):!1}),Modernizr.addTest("progressbar",function(){return document.createElement("progress").max!==undefined}),Modernizr.addTest("meter",function(){return document.createElement("meter").max!==undefined}),Modernizr.addTest("mathml",function(){var e=!1;if(document.createElementNS){var t="http://www.w3.org/1998/Math/MathML",n=document.createElement("div");n.style.position="absolute";var r=n.appendChild(document.createElementNS(t,"math")).appendChild(document.createElementNS(t,"mfrac"));r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("xx")),r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("yy")),document.body.appendChild(n),e=n.offsetHeight>n.offsetWidth}return e});
 /**
  * @title WET-BOEW Vapour loader
  * @overview Helper methods for WET
@@ -17,7 +17,7 @@
 /*
  * Vapour Object that will store tombstone data for plugins to leverage
  */
-(function( $, window, document, undef ) {
+( function( $, window, document, undef ) {
 "use strict";
 
 /**
@@ -40,7 +40,7 @@ var getUrlParts = function( url ) {
 			search: a.search,
 
 			// A collection of the parameters of the query string part of the URL.
-			params: (function() {
+			params: ( function() {
 				var results = {},
 					queryString = a.search.replace( /^\?/, "" ).split( "&" ),
 					len = queryString.length,
@@ -53,7 +53,7 @@ var getUrlParts = function( url ) {
 					}
 				}
 				return results;
-			}())
+			}() )
 		};
 	},
 
@@ -102,7 +102,7 @@ var getUrlParts = function( url ) {
 	 * @variable oldie
 	 * @return {integer} of IE version
 	 */
-	oldie = (function() {
+	oldie = ( function() {
 		var undef,
 			v = 3,
 			div = document.createElement( "div" ),
@@ -114,7 +114,7 @@ var getUrlParts = function( url ) {
 		) {}
 
 		return v > 4 ? v : undef;
-	}()),
+	}() ),
 
 	/**
 	 * @variable currentpage
@@ -126,10 +126,17 @@ var getUrlParts = function( url ) {
 	 * @variable disabled
 	 * @return {boolean} of state of disabled flag
 	 */
-	disabled = (function() {
-		var disabled = currentpage.params.wbdisable || ( !localStorage ? "false" : localStorage.getItem( "wbdisable" ) );
+	disabled = ( function() {
+		var disabledSaved = "false",
+			disabled;
+
+		try {
+			disabledSaved = localStorage.getItem( "wbdisable" ) || disabledSaved;
+		} catch ( e ) {}
+
+		disabled = currentpage.params.wbdisable || disabledSaved;
 		return ( typeof disabled === "string" ) ? ( disabled.toLowerCase() === "true" ) : Boolean( disabled );
-	}()),
+	}() ),
 
 	/*-----------------------------
 	 * Core Library Object
@@ -379,7 +386,7 @@ window.wb = wb;
 yepnope.addPrefix( "site", function( resourceObj ) {
 	resourceObj.url = $homepath + "/" + resourceObj.url;
 	return resourceObj;
-});
+} );
 
 /**
  * @prefix: plyfll! - builds the path for the polyfill resource
@@ -403,7 +410,7 @@ yepnope.addPrefix( "plyfll", function( resourceObj ) {
 	resourceObj.url = path + "/polyfills/" + url;
 
 	return resourceObj;
-});
+} );
 
 /**
  * @prefix: i18n! - adds the correct document language for our i18n library
@@ -411,12 +418,12 @@ yepnope.addPrefix( "plyfll", function( resourceObj ) {
 yepnope.addPrefix( "i18n", function( resourceObj ) {
 	resourceObj.url = $homepath + "/" + resourceObj.url + lang + $mode + ".js";
 	return resourceObj;
-});
+} );
 
 /*-----------------------------
  * Modernizr Polyfill Loading
  *-----------------------------*/
-Modernizr.load([
+Modernizr.load( [
 	{
 		test: Modernizr.details,
 		nope: [
@@ -479,15 +486,15 @@ Modernizr.load([
 
 					// Load the MathML dependency. Since the polyfill is only loaded
 					// when !Modernizr.mathml, we can skip the test here.
-					Modernizr.load({
+					Modernizr.load( {
 						load: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=Accessible",
 						complete: function() {
 
 							// Identify that initialization has completed
 							wb.ready( $document, componentName );
 						}
-					});
-				});
+					} );
+				} );
 
 				wb.add( selector );
 			}
@@ -510,9 +517,9 @@ Modernizr.load([
 			wb.start();
 		}
 	}
-]);
+] );
 
-})( jQuery, window, document );
+} )( jQuery, window, document );
 
 /**
  * @title WET-BOEW JQuery Helper Methods
@@ -521,7 +528,7 @@ Modernizr.load([
  * @author WET Community
  * Credits: http://kaibun.net/blog/2013/04/19/a-fully-fledged-coffeescript-boilerplate-for-jquery-plugins/
  */
-(function( $, wb ) {
+( function( $, wb ) {
 	wb.getData = function( element, dataName ) {
 		var elm = !element.jquery ? element : element[ 0 ],
 			dataAttr = elm.getAttribute( "data-" + dataName ),
@@ -538,9 +545,9 @@ Modernizr.load([
 
 		return dataObj;
 	};
-})( jQuery, wb );
+} )( jQuery, wb );
 
-(function( wb ) {
+( function( wb ) {
 	"use strict";
 
 	// Escapes the characters in a string for use in a jQuery selector
@@ -1610,16 +1617,16 @@ Modernizr.load([
 	 * Originally from http://stackoverflow.com/a/2117523/455535
 	 */
 	wb.guid = function() {
-		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function( replacementChar ) {
+		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace( /[xy]/g, function( replacementChar ) {
 			var rand = Math.random() * 16 | 0,
 				newChar = replacementChar === "x" ? rand : ( rand & 0x3 | 0x8 );
-			return newChar.toString(16);
-		});
+			return newChar.toString( 16 );
+		} );
 	};
 
-})( wb );
+} )( wb );
 
-(function( $, undef ) {
+( function( $, undef ) {
 	"use strict";
 
 	var methods,
@@ -1672,12 +1679,12 @@ Modernizr.load([
 		}
 	};
 
-})( jQuery );
+} )( jQuery );
 
 /*
 :focusable and :tabable jQuery helper expressions - https://github.com/jquery/jquery-ui/blob/24756a978a977d7abbef5e5bce403837a01d964f/ui/jquery.ui.core.js
 */
-(function( $ ) {
+( function( $ ) {
 	"use strict";
 
 	function focusable( element, isTabIndexNotNaN, visibility ) {
@@ -1711,14 +1718,14 @@ Modernizr.load([
 		return $.expr.filters.visible( element ) && !$( element )
 			.parents( )
 			.addBack( )
-			.filter(function() {
+			.filter( function() {
 				return $.css( this, "visibility" ) === "hidden";
-			})
+			} )
 			.length;
 	}
 
 	$.extend( $.expr[ ":" ], {
-		data: $.expr.createPseudo ? $.expr.createPseudo(function(dataName ) {
+		data: $.expr.createPseudo ? $.expr.createPseudo( function( dataName ) {
 			return function( elem ) {
 				return !!$.data( elem, dataName );
 			};
@@ -1739,9 +1746,9 @@ Modernizr.load([
 				isTabIndexNaN = isNaN( tabIndex );
 			return ( isTabIndexNaN || tabIndex >= 0 ) && focusable( element, !isTabIndexNaN );
 		}
-	});
+	} );
 
-})( jQuery );
+} )( jQuery );
 
 /**
  * @title WET-BOEW Ajax Fetch [ ajax-fetch ]
@@ -1749,7 +1756,7 @@ Modernizr.load([
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
-(function( $, wb ) {
+( function( $, wb ) {
 "use strict";
 
 /*
@@ -1766,7 +1773,16 @@ $document.on( "ajax-fetch.wb", function( event ) {
 	// TODO: Remove event.element in future versions
 	var caller = event.element || event.target,
 		fetchOpts = event.fetch,
+		urlParts = fetchOpts.url.split( " " ),
+		url = urlParts[ 0 ],
+		urlHash = url.split( "#" )[ 1 ],
+		selector = urlParts[ 1 ] || ( urlHash ? "#" + urlHash : false ),
 		fetchData, callerId;
+
+	// Separate the URL from the filtering criteria
+	if ( selector ) {
+		fetchOpts.url = urlParts[ 0 ];
+	}
 
 	// Filter out any events triggered by descendants
 	if ( caller === event.target || event.currentTarget === event.target ) {
@@ -1777,8 +1793,12 @@ $document.on( "ajax-fetch.wb", function( event ) {
 		callerId = caller.id;
 
 		$.ajax( fetchOpts )
-			.done(function( response, status, xhr ) {
+			.done( function( response, status, xhr ) {
 				var responseType = typeof response;
+
+				if ( selector ) {
+					response = $( "<div>" + response + "</div>" ).find( selector );
+				}
 
 				fetchData = {
 					response: response,
@@ -1789,13 +1809,13 @@ $document.on( "ajax-fetch.wb", function( event ) {
 				fetchData.pointer = $( "<div id='" + wb.getId() + "' data-type='" + responseType + "' />" )
 										.append( responseType === "string" ? response : "" );
 
-				$( "#" + callerId ).trigger({
+				$( "#" + callerId ).trigger( {
 					type: "ajax-fetched.wb",
 					fetch: fetchData
 				}, this );
-			})
-			.fail(function( xhr, status, error ) {
-				$( "#" + callerId ).trigger({
+			} )
+			.fail( function( xhr, status, error ) {
+				$( "#" + callerId ).trigger( {
 					type: "ajax-failed.wb",
 					fetch: {
 						xhr: xhr,
@@ -1805,9 +1825,9 @@ $document.on( "ajax-fetch.wb", function( event ) {
 				}, this );
 			}, this );
 	}
-});
+} );
 
-})( jQuery, wb );
+} )( jQuery, wb );
 
 /**
  * @title WET-BOEW Events Calendar
@@ -1815,7 +1835,7 @@ $document.on( "ajax-fetch.wb", function( event ) {
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -1862,7 +1882,7 @@ var componentName = "wb-calevt",
 
 					// Identify that initialization has completed
 					wb.ready( $elm, componentName );
-				});
+				} );
 		}
 	},
 
@@ -1882,9 +1902,9 @@ var componentName = "wb-calevt",
 			promises.push( $.get( urls[ i ], appendData, "html" ) );
 		}
 
-		$.when.apply( $, promises ).always(function() {
+		$.when.apply( $, promises ).always( function() {
 			dfd.resolve();
-		});
+		} );
 
 		return dfd.promise();
 	},
@@ -2163,7 +2183,7 @@ $document.on( "displayed.wb-cal", selector + "-cal", function( event, year, mont
 		$( selector ).filter( "[data-calevt-src='" + $target[ 0 ].id + "']" )
 				.trigger( "wb-updated" + selector );
 	}
-});
+} );
 
 $document.on( "focusin focusout", ".wb-calevt-cal .cal-days a", function( event ) {
 	var eventType = event.type,
@@ -2184,7 +2204,7 @@ $document.on( "focusin focusout", ".wb-calevt-cal .cal-days a", function( event 
 		break;
 
 	case "focusout":
-		setTimeout(function() {
+		setTimeout( function() {
 			if ( dayEvents.find( "a:focus" ).length === 0 ) {
 				dayEvents.removeClass( evDetails )
 					.addClass( "wb-inv" )
@@ -2194,7 +2214,7 @@ $document.on( "focusin focusout", ".wb-calevt-cal .cal-days a", function( event 
 		}, 5 );
 		break;
 	}
-});
+} );
 
 $document.on( "mouseover mouseout", ".wb-calevt-cal .cal-days td", function( event ) {
 	var target = event.currentTarget,
@@ -2213,20 +2233,20 @@ $document.on( "mouseover mouseout", ".wb-calevt-cal .cal-days td", function( eve
 			break;
 
 		case "mouseout":
-			dayEvents.delay( 100 ).queue(function() {
+			dayEvents.delay( 100 ).queue( function() {
 				$( this ).removeClass( evDetails )
 					.addClass( "wb-inv" )
 					.dequeue();
-			});
+			} );
 			break;
 		}
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Calendar library
@@ -2234,7 +2254,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -2291,10 +2311,10 @@ var namespace = "wb-cal",
 				.attr( "id", calendarId );
 
 			if ( ariaLabelledBy ) {
-				$calendar.attr({
+				$calendar.attr( {
 					"aria-controls": ariaControls,
 					"aria-labelledby": ariaLabelledBy
-				});
+				} );
 			}
 
 			// Converts min and max date from string to date objects
@@ -2331,8 +2351,8 @@ var namespace = "wb-cal",
 			// Reset calendar if the calendar previously existed
 			$objCalendar = $( objCalendarId );
 			if ( $objCalendar.length !== 0 ) {
-				$objCalendar.find( "#cal-" + calendarId + "-wd, .cal-mnth, #cal-" + calendarId + "-days").remove();
-				$objCalendar = $calendar.children("#cal-" + calendarId + "-cnt");
+				$objCalendar.find( "#cal-" + calendarId + "-wd, .cal-mnth, #cal-" + calendarId + "-days" ).remove();
+				$objCalendar = $calendar.children( "#cal-" + calendarId + "-cnt" );
 			} else {
 				$objCalendar = $( "<table id='cal-" + calendarId + "-cnt' class='cal-cnt'></table>" );
 				$calendar.append( $objCalendar );
@@ -2463,7 +2483,7 @@ var namespace = "wb-cal",
 					true,
 					eventData.mindate,
 					eventData.maxdate
-				]);
+				] );
 			}
 
 			$container.find( classes.indexOf( "wb-inv" ) !== -1 ?
@@ -2538,7 +2558,7 @@ var namespace = "wb-cal",
 				event.preventDefault();
 				onGoTo( calendarId, minDate, maxDate );
 				return false;
-			})
+			} )
 
 			// Update the list of available months when changing the year
 			// and populate the initial month list.
@@ -2686,7 +2706,7 @@ var namespace = "wb-cal",
 				true,
 				minDate,
 				maxDate
-			]);
+			] );
 			$container.trigger( hideGoToFrmEvent );
 
 			// Go to the first day to avoid having to tab over the navigation again.
@@ -2871,7 +2891,7 @@ $document.on( "keydown", ".cal-days a", function( event ) {
 
 		return false;
 	}
-});
+} );
 
 $document.on( hideGoToFrmEvent, ".cal-cnt", hideGoToFrm );
 
@@ -2886,7 +2906,7 @@ $document.on( "click", ".cal-goto-lnk", function( event ) {
 	if ( !which || which === 1 ) {
 		showGoToForm( $( event.currentTarget ).closest( ".cal-cnt" ).attr( "id" ) );
 	}
-});
+} );
 
 $document.on( "click", ".cal-goto-cancel", function( event ) {
 	var which = event.which;
@@ -2895,9 +2915,9 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 	if ( !which || which === 1 ) {
 		$( event.currentTarget ).closest( ".cal-cnt" ).trigger( hideGoToFrmEvent );
 	}
-});
+} );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -2907,7 +2927,7 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
  * @author @duboisp
  *
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /**
@@ -3773,7 +3793,7 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 						$( currentDataGroupVector.header[ currentDataGroupVector.header.length - 1 ].elem ).text() );
 
 					// Add the series
-					allSeries.push(pieQuaterFlotSeries);
+					allSeries.push( pieQuaterFlotSeries );
 				}
 
 				// Create a sub Figure or use the main one
@@ -3782,10 +3802,10 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 					currentRowGroup.row[ 0 ].header.length === 0 ) ) {
 
 					$placeHolder = $wetChartContainer;
-					$placeHolder.css({
+					$placeHolder.css( {
 						height: optionsCharts.height,
 						width: optionsCharts.width
-					});
+					} );
 
 				} else {
 
@@ -3870,12 +3890,12 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 				nbBarChart += 1;
 
 				// Set a default setting specially for bar charts
-				if (!currVectorOptions.bars) {
+				if ( !currVectorOptions.bars ) {
 					currVectorOptions.bars = { show: true, barWidth: 0.9 };
 				}
 
 				// Set a default order for orderBars flot plugin
-				if (!currVectorOptions.bars.order) {
+				if ( !currVectorOptions.bars.order ) {
 					currVectorOptions.bars.order = nbBarChart;
 				}
 			}
@@ -3986,6 +4006,7 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 		// returns DOM object = proceed with init
 		// returns undefined = do not proceed with init (e.g., already initialized)
 		var elm = wb.init( event, componentName, selector, true ),
+			settings = window[ componentName ],
 			elmId, modeJS, deps;
 
 		if ( elm ) {
@@ -3999,6 +4020,11 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 				"site!deps/tableparser" + modeJS
 			];
 
+			//TODO: Revist this in the new plugin structure
+			if ( settings && settings.plugins ) {
+				deps = deps.concat( settings.plugins );
+			}
+
 			// Only initialize the i18nText once
 			if ( !i18nText ) {
 				i18n = wb.i18n;
@@ -4009,7 +4035,7 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 			}
 
 			// Load the required dependencies
-			Modernizr.load({
+			Modernizr.load( {
 
 				// For loading multiple dependencies
 				load: deps,
@@ -4022,7 +4048,7 @@ $document.on( "click", ".cal-goto-cancel", function( event ) {
 					// Identify that initialization has completed
 					wb.ready( $elm, componentName );
 				}
-			});
+			} );
 		}
 	};
 
@@ -4056,12 +4082,12 @@ $document.on( "timerpoke.wb " + initEvent + " " + tableParsingCompleteEvent, sel
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Collapsible alerts plugin
@@ -4069,7 +4095,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET community
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4096,7 +4122,7 @@ var componentName = "wb-collapsible",
 
 		if ( details ) {
 
-			key = "alert-collapsible-state-" + details.getAttribute("id");
+			key = "alert-collapsible-state-" + details.getAttribute( "id" );
 
 			try {
 				if ( localStorage.getItem( key ) ) {
@@ -4169,15 +4195,15 @@ $document.on( "timerpoke.wb", function() {
 			 * so returning true allows for events to always continue
 			 */
 			return true;
-		});
+		} );
 	}
 
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Country Content
@@ -4185,7 +4211,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @nschonni
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4233,8 +4259,8 @@ var componentName = "wb-ctrycnt",
 
 					// Identify that initialization has completed
 					wb.ready( $elm, componentName );
-				});
-			});
+				} );
+			} );
 		}
 	},
 	getCountry = function() {
@@ -4245,7 +4271,7 @@ var componentName = "wb-ctrycnt",
 		if ( countryCode === null ) {
 
 			// From https://github.com/aFarkas/webshim/blob/master/src/shims/geolocation.js#L89-L127
-			$.ajax({
+			$.ajax( {
 				url: "http://freegeoip.net/json/",
 				dataType: "jsonp",
 				cache: true,
@@ -4264,7 +4290,7 @@ var componentName = "wb-ctrycnt",
 				error: function() {
 					dfd.reject( "" );
 				}
-			});
+			} );
 		} else {
 			dfd.resolve( countryCode );
 		}
@@ -4278,7 +4304,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Data Ajax [data-ajax-after], [data-ajax-append],
@@ -4287,7 +4313,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4350,15 +4376,15 @@ var componentName = "wb-data-ajax",
 				if ( typeof settings.corsFallback === "function" ) {
 					fetchObj.dataType = "jsonp";
 					fetchObj.jsonp = "callback";
-					fetchObj = settings.corsFallback(fetchObj);
+					fetchObj = settings.corsFallback( fetchObj );
 				}
 			}
 		}
 
-		$elm.trigger({
+		$elm.trigger( {
 			type: "ajax-fetch.wb",
 			fetch: fetchObj
-		});
+		} );
 	};
 
 $document.on( "timerpoke.wb " + initEvent + " " + updateEvent + " ajax-fetched.wb", selector, function( event ) {
@@ -4397,14 +4423,14 @@ $document.on( "timerpoke.wb " + initEvent + " " + updateEvent + " ajax-fetched.w
 
 			// ajax-fetched event
 			content = event.fetch.response;
-			if ( content ) {
+			if ( content &&  content.length > 0 ) {
 
 				//Prevents the force caching of nested resources
 				jQueryCaching = jQuery.ajaxSettings.cache;
 				jQuery.ajaxSettings.cache = true;
 
 				// "replace" is the only event that doesn't map to a jQuery function
-				if ( ajaxType === "replace") {
+				if ( ajaxType === "replace" ) {
 					$elm.html( content );
 				} else {
 					$elm[ ajaxType ]( content );
@@ -4429,7 +4455,7 @@ for ( s = 0; s !== selectorsLength; s += 1 ) {
 	wb.add( selectors[ s ] );
 }
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Data InView
@@ -4437,7 +4463,7 @@ for ( s = 0; s !== selectorsLength; s += 1 ) {
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4471,7 +4497,7 @@ var componentName = "wb-inview",
 			$elms = $elms.add( $elm );
 
 			// Allow other plugins to run first
-			setTimeout(function() {
+			setTimeout( function() {
 				onInView( $elm );
 
 				// Identify that initialization has completed
@@ -4522,11 +4548,11 @@ var componentName = "wb-inview",
 						if ( !oldViewState ) {
 							$dataInView.addClass( "outside-off" );
 						}
-						$dataInView.trigger({
+						$dataInView.trigger( {
 							type: ( show ? "open" : "close" ),
 							namespace: "wb-overlay",
 							noFocus: true
-						});
+						} );
 					} else {
 						$dataInView
 							.attr( "aria-hidden", !show )
@@ -4567,20 +4593,20 @@ $document.on( "timerpoke.wb " + initEvent + " " + scrollEvent, selector, functio
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 $window.on( "scroll scrollstop", function() {
 	$elms.trigger( scrollEvent );
-});
+} );
 
 $document.on( "txt-rsz.wb win-rsz-width.wb win-rsz-height.wb", function() {
 	$elms.trigger( scrollEvent );
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Data Picture
@@ -4588,7 +4614,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @patheard
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4696,17 +4722,17 @@ $document.on( "timerpoke.wb " + initEvent + " " + picturefillEvent, selector, fu
 		}
 		break;
 	}
-});
+} );
 
 // Handles window resize so images can be updated as new media queries match
 $document.on( "txt-rsz.wb win-rsz-width.wb win-rsz-height.wb", function() {
 	$( selector ).trigger( picturefillEvent );
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Responsive equal height
@@ -4714,7 +4740,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @thomasgohard
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -4912,7 +4938,7 @@ $document.on( "txt-rsz.wb win-rsz-width.wb win-rsz-height.wb wb-updated.wb-table
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Favicon Plugin
@@ -4933,7 +4959,7 @@ wb.add( selector );
  *
  *     <link href="favion.ico" rel='icon' data-rel="apple-touch-icon-precomposed" data-filename="my-mobile-favicon.ico">
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -5067,12 +5093,12 @@ $document.on( mobileEvent + " " + iconEvent, selector, function( event, data ) {
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Feeds
@@ -5080,7 +5106,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, wb, undef ) {
+( function( $, window, wb, undef ) {
 "use strict";
 
 /*
@@ -5124,9 +5150,9 @@ var componentName = "wb-feeds",
 				data.fIcon + "' alt='" + author +
 				"' height='64px' width='64px' class='media-object'/></a><div class='media-body'>" +
 				"<h4 class='media-heading'><a href='" + data.link + "'><span class='wb-inv'>" +
-				title[ 0 ] + " - </span>" + author + "</a>  " +
-				( data.publishedDate !== "" ? " <small class='feeds-date text-right'>[" +
-				wb.date.toDateISO( data.publishedDate, true ) + "]</small>" : "" ) +
+				title[ 0 ] + " - </span>" + author + "</a><br />" +
+				( data.publishedDate !== "" ? " <small class='feeds-date text-right'><time>" +
+				wb.date.toDateISO( data.publishedDate, true ) + "</time></small>" : "" ) +
 				"</h4><p>" + content + "</p></div></li>";
 		},
 
@@ -5141,8 +5167,8 @@ var componentName = "wb-feeds",
 				title = data.title,
 				media = data.media.m,
 				thumbnail = media.replace( "_m.", "_s." ),
-				image = media.replace("_m", ""),
-				description = data.description.replace( /^\s*<p>(.*?)<\/p>\s*<p>(.*?)<\/p>/i, "");
+				image = media.replace( "_m", "" ),
+				description = data.description.replace( /^\s*<p>(.*?)<\/p>\s*<p>(.*?)<\/p>/i, "" );
 
 			// due to CORS we cannot default to simple ajax pulls of the image. We have to inline the content box
 			return "<li><a class='wb-lbx' href='#" + seed + "'><img src='" + thumbnail + "' alt='" + title + "' title='" + title + "' class='img-responsive'/></a>" +
@@ -5184,10 +5210,10 @@ var componentName = "wb-feeds",
 		 * @return {string}    HTML string of formatted using a simple list / anchor view
 		 */
 		pinterest: function( data ) {
-			var content = fromCharCode( data.content ).replace(/<a href="\/pin[^"]*"><img ([^>]*)><\/a>([^<]*)(<a .*)?/, "<a href='" + data.link + "'><img alt='' class='center-block' $1><br/>$2</a>$3");
+			var content = fromCharCode( data.content ).replace( /<a href="\/pin[^"]*"><img ([^>]*)><\/a>([^<]*)(<a .*)?/, "<a href='" + data.link + "'><img alt='' class='center-block' $1><br/>$2</a>$3" );
 			return "<li class='media'>" + content +
-			( data.publishedDate !== "" ? " <small class='small'>[" +
-			wb.date.toDateISO( data.publishedDate, true ) + "]</small>" : "" ) + "</li>";
+			( data.publishedDate !== "" ? " <small class='small feeds-date'><time>" +
+			wb.date.toDateISO( data.publishedDate, true ) + "</time></small>" : "" ) + "</li>";
 		},
 		/**
 		 * [generic template]
@@ -5219,7 +5245,7 @@ var componentName = "wb-feeds",
 	 * @param  {string} s string to sanitize with escaped unicode characters
 	 * @return {string}	sanitized string
 	 */
-	fromCharCode = function(s) {
+	fromCharCode = function( s ) {
 		return s.replace( patt, decode );
 	},
 
@@ -5326,10 +5352,10 @@ var componentName = "wb-feeds",
 					_content: $content
 				};
 
-				fElem.trigger({
+				fElem.trigger( {
 					type: "ajax-fetch.wb",
 					fetch: fetch
-				});
+				} );
 			}
 		}
 	},
@@ -5367,10 +5393,10 @@ var componentName = "wb-feeds",
 		}
 
 		toProcess -= 1 ;
-		$content.data({
+		$content.data( {
 			"toProcess": toProcess,
 			"entries": entries
-		});
+		} );
 
 		return toProcess;
 	},
@@ -5395,7 +5421,7 @@ var componentName = "wb-feeds",
 
 		sorted = entries.sort( function( a, b ) {
 			return compare( b.publishedDate, a.publishedDate );
-		});
+		} );
 
 		for ( i = 0; i !== cap; i += 1 ) {
 			sortedEntry = sorted[ i ];
@@ -5418,7 +5444,7 @@ var componentName = "wb-feeds",
 								if ( !$feedCont.hasClass( "feed-active" ) ) {
 									activateFeed( $feedCont );
 								}
-							})
+							} )
 							.addClass( hasVisibilityHandler );
 					}
 				}
@@ -5430,7 +5456,7 @@ var componentName = "wb-feeds",
 						.on( "click.wb-feeds", function( event ) {
 							var $summary = $( event.currentTarget ).off( "click.wb-feeds" );
 							activateFeed( $summary.parent().find( feedContSelector ) );
-						});
+						} );
 			}
 		}
 
@@ -5483,7 +5509,7 @@ $document.on( "ajax-fetched.wb", selector + " " + feedLinkSelector, function( ev
 			wb.ready( $( eventTarget ).closest( selector ), componentName );
 		}
 	}
-});
+} );
 
 // Bind the init event to the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
@@ -5491,7 +5517,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Footnotes
@@ -5499,7 +5525,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @EricDunsworth
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -5586,12 +5612,12 @@ $document.on( "click vclick", selector + " dd p.fn-rtn a", function( event ) {
 		$document.find( refId + " a" ).trigger( setFocusEvent );
 		return false;
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Form validation
@@ -5599,7 +5625,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -5659,7 +5685,7 @@ var componentName = "wb-frmvld",
 				};
 			}
 
-			Modernizr.load({
+			Modernizr.load( {
 
 				// For loading multiple dependencies
 				both: [
@@ -5708,7 +5734,7 @@ var componentName = "wb-frmvld",
 					if ( wb.ieVersion > 0 && wb.ieVersion < 9 ) {
 						len = $required.length;
 						$required.removeAttr( "required" );
-						for ( i = 0; i !== len; i += 1) {
+						for ( i = 0; i !== len; i += 1 ) {
 							$required[ i ].setAttribute( "data-rule-required", "true" );
 						}
 						$inputs.filter( "[type=date]" ).each( function() {
@@ -5716,12 +5742,12 @@ var componentName = "wb-frmvld",
 								$parent = $this.wrap( "<div/>" ).parent(),
 								newElm = $( $parent.html().replace( "type=date", "type=text" ) );
 							$parent.replaceWith( newElm );
-						});
+						} );
 						$formElms = $form.find( "input, select, textarea" );
 					}
 
 					// The jQuery validation plug-in in action
-					validator = $form.validate({
+					validator = $form.validate( {
 						meta: "validate",
 						focusInvalid: false,
 						ignore: settings.ignore,
@@ -5742,7 +5768,7 @@ var componentName = "wb-frmvld",
 									$fieldset = $element.closest( "fieldset" );
 									if ( $fieldset.length !== 0 ) {
 										$legend = $fieldset.find( "legend" ).first();
-										if ( $legend.length !== 0 && $fieldset.find( "input[name='" + $element.attr( "name" ) + "']" ) !== 1) {
+										if ( $legend.length !== 0 && $fieldset.find( "input[name='" + $element.attr( "name" ) + "']" ) !== 1 ) {
 											$error.appendTo( $legend );
 											return;
 										}
@@ -5765,18 +5791,13 @@ var componentName = "wb-frmvld",
 								ariaLive = $form.parent().find( ".arialive" )[ 0 ],
 								summary, key, i, len, $error, prefix, $fieldName, $fieldset, label, labelString;
 
+							// Correct the colouring of fields that are no longer invalid
 							$form
-								.find( "[aria-invalid=true]" )
-									.removeAttr( "aria-invalid" )
-									.closest( ".form-group" )
+								.find( ".has-error [aria-invalid=false]" )
+									.closest( ".has-error" )
 										.removeClass( "has-error" );
+
 							if ( $errors.length !== 0 ) {
-								// Create our container if one doesn't already exist
-								if ( $summaryContainer.length === 0 ) {
-									$summaryContainer = $( "<section id='" + errorFormId + "' class='alert alert-danger' tabindex='-1'/>" ).prependTo( $form );
-								} else {
-									$summaryContainer.empty();
-								}
 
 								// Post process
 								summary = "<" + summaryHeading + ">" +
@@ -5787,7 +5808,6 @@ var componentName = "wb-frmvld",
 											i18nText.errorFound
 									) + "</" + summaryHeading + "><ul>";
 								$errorfields
-									.attr( "aria-invalid", "true" )
 									.closest( ".form-group" )
 										.addClass( "has-error" );
 								len = $errors.length;
@@ -5812,15 +5832,7 @@ var componentName = "wb-frmvld",
 								}
 								summary += "</ul>";
 
-								// Output our error summary and place it in the error container
-								$summaryContainer.append( summary );
-
-								// Put focus on the error if the errors are generated by an attempted form submission
-								if ( submitted ) {
-
-									// Assign focus to $summaryContainer
-									$summaryContainer.trigger( setFocusEvent );
-								} else {
+								if ( !submitted ) {
 
 									// Update the aria-live region as necessary
 									i = 0;
@@ -5847,7 +5859,25 @@ var componentName = "wb-frmvld",
 									}
 								}
 
-								submitted = false;
+								// Delay updating the summary container in case a summary link was clicked
+								setTimeout( function() {
+
+									// Output our error summary and place it in the error container
+									// Create our container if one doesn't already exist
+									if ( $summaryContainer.length === 0 ) {
+										$summaryContainer = $( "<section id='" + errorFormId + "' class='alert alert-danger' tabindex='-1'>" + summary + "</section>" ).prependTo( $form );
+									} else {
+										$summaryContainer.empty().append( summary );
+									}
+
+									// Put focus on the error if the errors are generated by an attempted form submission
+									if ( submitted ) {
+
+										// Assign focus to $summaryContainer
+										$summaryContainer.trigger( setFocusEvent );
+										submitted = false;
+									}
+								}, 100 );
 							} else {
 								// Update the aria-live region as necessary
 								if ( ariaLive.innerHTML.length !== 0 ) {
@@ -5875,13 +5905,12 @@ var componentName = "wb-frmvld",
 								$summaryContainer.empty();
 							}
 
-							$form.find( "[aria-invalid=true]" ).removeAttr( "aria-invalid" );
 							ariaLive = $form.parent().find( ".arialive" )[ 0 ];
 							if ( ariaLive.innerHTML.length !== 0 ) {
 								ariaLive.innerHTML = "";
 							}
 						}
-					});
+					} );
 
 					// Tell the i18n file to execute to run any $.validator extends
 					$form.trigger( "formLanguages.wb" );
@@ -5889,7 +5918,7 @@ var componentName = "wb-frmvld",
 					// Identify that initialization has completed
 					wb.ready( $( eventTarget ), componentName );
 				}
-			});
+			} );
 		}
 	};
 
@@ -5899,7 +5928,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /*
  * @title WET-BOEW Geomap
@@ -5907,7 +5936,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, wb ) {
+( function( $, wb ) {
 "use strict";
 
 var componentName = "wb-geomap",
@@ -5931,7 +5960,7 @@ var componentName = "wb-geomap",
 			$elm = $( elm );
 			modeJS = wb.getMode() + ".js";
 
-			Modernizr.load([ {
+			Modernizr.load( [ {
 
 				// For loading multiple dependencies
 				both: [
@@ -5942,7 +5971,7 @@ var componentName = "wb-geomap",
 				complete: function() {
 					$elm.trigger( "geomap.wb" );
 				}
-			} ]);
+			} ] );
 		}
 	};
 
@@ -5952,7 +5981,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, wb );
+} )( jQuery, wb );
 
 /**
  * @title WET-BOEW Lightbox
@@ -5960,7 +5989,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -6059,7 +6088,7 @@ var componentName = "wb-lbx",
 
 				// Identify that initialization has completed
 				wb.ready( $elm, componentName );
-			});
+			} );
 
 			// Load dependencies as needed
 			setup();
@@ -6166,19 +6195,22 @@ var componentName = "wb-lbx",
 				},
 				parseAjax: function( mfpResponse ) {
 					var urlHash = this.currItem.src.split( "#" )[ 1 ],
-						$response = $( "<div>" + mfpResponse.data + "</div>" );
+						$response;
 
 					// Provide the ability to filter the AJAX response HTML
 					// by the URL hash
 					// TODO: Should be dealt with upstream by Magnific Popup
 					if ( urlHash ) {
-						$response = $response.find( "#" + wb.jqEscape( urlHash ) );
+						$response = $( "<div>" + mfpResponse.data + "</div>" )
+										.find( "#" + wb.jqEscape( urlHash ) );
+					} else {
+						$response = $( mfpResponse.data );
 					}
 
 					$response
 						.find( ".modal-title, h1" )
-						.first()
-						.attr( "id", "lbx-title" );
+							.first()
+								.attr( "id", "lbx-title" );
 
 					mfpResponse.data = $response;
 				}
@@ -6186,7 +6218,7 @@ var componentName = "wb-lbx",
 		}
 
 		// Load Magnific Popup dependency and bind the init event handler
-		Modernizr.load({
+		Modernizr.load( {
 			load: "site!deps/jquery.magnific-popup" + wb.getMode() + ".js",
 			complete: function() {
 
@@ -6196,7 +6228,7 @@ var componentName = "wb-lbx",
 
 				$document.trigger( dependenciesLoadedEvent );
 			}
-		});
+		} );
 	};
 
 // Bind the init event of the plugin
@@ -6225,7 +6257,7 @@ $document.on( "keydown", ".mfp-wrap", function( event ) {
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 /*
  * Sends focus to the close button if focus moves beyond the Lightbox (Jaws fix)
@@ -6243,7 +6275,7 @@ $document.on( "focus", ".lbx-end", function( event ) {
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 // Outside focus detection (for screen readers that exit the lightbox
 // outside the normal means)
@@ -6256,7 +6288,7 @@ $document.on( "focusin", "body", function( event ) {
 		// Close the popup
 		$.magnificPopup.close();
 	}
-});
+} );
 
 // Handler for clicking on a same page link within the overlay to outside the overlay
 $document.on( "click vclick", ".mfp-wrap a[href^='#']", function( event ) {
@@ -6288,13 +6320,13 @@ $document.on( "click vclick", ".mfp-wrap a[href^='#']", function( event ) {
 			}
 		}
 	}
-});
+} );
 
 // Event handler for closing a modal popup
 $( document ).on( "click", ".popup-modal-dismiss", function( event ) {
 	event.preventDefault();
 	$.magnificPopup.close();
-});
+} );
 
 // Event handler for opening a popup without a link
 $( document ).on( "open" + selector, function( event, items, modal, title ) {
@@ -6309,7 +6341,7 @@ $( document ).on( "open" + selector, function( event, items, modal, title ) {
 
 		// Ensure the dependencies are loaded first
 		$document.one( dependenciesLoadedEvent, function() {
-			$.magnificPopup.open({
+			$.magnificPopup.open( {
 				items: items,
 				modal: isModal,
 				gallery: {
@@ -6319,18 +6351,18 @@ $( document ).on( "open" + selector, function( event, items, modal, title ) {
 					titleSrc: titleSrc
 				},
 				callbacks: callbacks
-			});
-		});
+			} );
+		} );
 
 		// Load dependencies as needed
 		setup();
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Menu plugin
@@ -6338,7 +6370,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET community
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -6386,12 +6418,12 @@ var componentName = "wb-menu",
 			// This is required for backwards compatibility. In previous versions, the menu was not integrated witht he data ajax plugin.
 			ajaxFetch = $elm.data( "ajax-fetch" );
 			if ( ajaxFetch ) {
-				$elm.trigger({
+				$elm.trigger( {
 					type: "ajax-fetch.wb",
 					fetch: {
 						url: ajaxFetch
 					}
-				});
+				} );
 			} else {
 
 				//Enhance menus that don't rely on the data-ajax plugin
@@ -6417,21 +6449,21 @@ var componentName = "wb-menu",
 			$elm = $elements.eq( i );
 			$subMenu = $elm.siblings( "ul" );
 
-			$elm.attr({
+			$elm.attr( {
 				"aria-posinset": ( i + 1 ),
 				"aria-setsize": length,
 				role: "menuitem"
-			});
+			} );
 
 			// if there is a submenu lets put in the aria for it
 			if ( $subMenu.length !== 0 ) {
 
 				$elm.attr( "aria-haspopup", "true" );
 
-				$subMenu.attr({
+				$subMenu.attr( {
 					"aria-expanded": "false",
 					"aria-hidden": "true"
-				});
+				} );
 
 				// recurse into submenu
 				drizzleAria( $subMenu.children( "li" ).find( menuItemSelector ) );
@@ -6446,7 +6478,7 @@ var componentName = "wb-menu",
 	createCollapsibleSection = function( section, sectionIndex, sectionsLength, $items, itemsLength ) {
 
 		// Use details/summary for the collapsible mechanism
-		var k, $elm, elm, $item, $subItems,
+		var k, $elm, elm, $item, $subItems, subItemsLength,
 			$section = $( section ),
 			posinset = "' aria-posinset='",
 			menuitem = "role='menuitem' aria-setsize='",
@@ -6461,7 +6493,10 @@ var componentName = "wb-menu",
 			$item = $items.eq( k );
 			$elm = $item.find( menuItemSelector );
 			elm = $elm[ 0 ];
-			if ( elm.nodeName.toLowerCase() === "a" ) {
+			$subItems = $elm.parent().find( "> ul > li" );
+			subItemsLength = $subItems.length;
+
+			if ( elm && subItemsLength === 0 && elm.nodeName.toLowerCase() === "a" ) {
 				sectionHtml += "<li>" + $item[ 0 ].innerHTML.replace(
 						/(<a\s)/,
 						"$1 " + menuitem + itemsLength +
@@ -6469,7 +6504,6 @@ var componentName = "wb-menu",
 							"' tabindex='-1' "
 					) + "</li>";
 			} else {
-				$subItems = $elm.parent().find( "> ul > li" );
 				sectionHtml += createCollapsibleSection( elm, k, itemsLength, $subItems, $subItems.length );
 			}
 		}
@@ -6591,11 +6625,11 @@ var componentName = "wb-menu",
 
 			// Add the secondary menu
 			if ( $secnav.length !== 0 ) {
-				allProperties.push([
+				allProperties.push( [
 					$secnav.find( "> ul > li > *:first-child" ).get(),
 					"sec-pnl",
 					$secnav.find( "h2" ).html()
-				]);
+				] );
 
 				if ( $secnav.find( ".wb-navcurr" ).length === 0 ) {
 
@@ -6612,20 +6646,20 @@ var componentName = "wb-menu",
 					$menubar.attr( "role", "menubar" );
 				}
 
-				allProperties.push([
+				allProperties.push( [
 					$menu.get(),
 					"sm-pnl",
 					$ajaxed.find( "h2" ).html()
-				]);
+				] );
 			}
 
 			// Add the site information
 			if ( $info.length !== 0 ) {
-				allProperties.push([
+				allProperties.push( [
 					$info.find( "h3, a" ).not( "section a" ),
 					"info-pnl",
 					$info.find( "h2" ).html()
-				]);
+				] );
 
 				if ( $info.find( ".wb-navcurr" ).length === 0 ) {
 
@@ -6673,7 +6707,7 @@ var componentName = "wb-menu",
 		$elm.html( $ajaxed.html() );
 
 		// Trigger the navcurrent plugin
-		setTimeout(function() {
+		setTimeout( function() {
 			$elm.trigger( navCurrentEvent, breadcrumb );
 			$panel.find( "#sm-pnl" ).trigger( navCurrentEvent, breadcrumb );
 
@@ -6733,10 +6767,10 @@ var componentName = "wb-menu",
 			.removeClass( "sm-open" )
 			.children( ".open" )
 				.removeClass( "open" )
-				.attr({
+				.attr( {
 					"aria-hidden": "true",
 					"aria-expanded": "false"
-				});
+				} );
 
 		if ( removeActive ) {
 			$elm.removeClass( "active" );
@@ -6761,10 +6795,10 @@ var componentName = "wb-menu",
 				.addClass( "active sm-open" )
 				.children( ".sm" )
 					.addClass( "open" )
-					.attr({
+					.attr( {
 						"aria-hidden": "false",
 						"aria-expanded": "true"
-					});
+					} );
 		}
 	},
 
@@ -6824,7 +6858,7 @@ $document.on( "timerpoke.wb " + initEvent + " ajax-fetched.wb ajax-failed.wb", s
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 $document.on( "mouseleave", selector + " .menu", function( event ) {
 	// Clear the timeout for open/closing menus
@@ -6833,7 +6867,7 @@ $document.on( "mouseleave", selector + " .menu", function( event ) {
 	globalTimeout = setTimeout( function() {
 		menuClose( $( event.currentTarget ).find( ".active" ), true );
 	}, hoverDelay );
-});
+} );
 
 // Touchscreen "touches" on menubar items should close the submenu if it is open
 $document.on( "touchstart click", selector + " .item[aria-haspopup=true]", function( event ) {
@@ -6856,7 +6890,7 @@ $document.on( "touchstart click", selector + " .item[aria-haspopup=true]", funct
 			menuClose( $parent, true );
 		}
 	}
-});
+} );
 
 // Click on menu items with submenus should open and close those submenus
 $document.on( "click", selector + " [role=menu] [aria-haspopup=true]", function( event ) {
@@ -6888,7 +6922,7 @@ $document.on( "click", selector + " [role=menu] [aria-haspopup=true]", function(
 
 	submenu.setAttribute( "aria-expanded", !isOpen );
 	submenu.setAttribute( "aria-hidden", isOpen );
-});
+} );
 
 // Clicks and touches outside of menus should close any open menus
 $document.on( "click touchstart", function( event ) {
@@ -6904,9 +6938,9 @@ $document.on( "click touchstart", function( event ) {
 			menuClose( $openMenus, true );
 		}
 	}
-});
+} );
 
-$document.on( "mouseover focusin", selector + " .item", function(event) {
+$document.on( "mouseover focusin", selector + " .item", function( event ) {
 	var $elm = $( event.currentTarget ),
 		$parent = $elm.parent(),
 		$container = $parent.closest( selector );
@@ -6921,7 +6955,7 @@ $document.on( "mouseover focusin", selector + " .item", function(event) {
 			menuDisplay( $container, $parent );
 		}, hoverDelay );
 	}
-});
+} );
 
 /*
  * Keyboard bindings
@@ -7035,10 +7069,10 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 					// Update the WAI-ARIA states and move focus to
 					// the first submenu item
 					$parent.children( "ul" )
-						.attr({
+						.attr( {
 							"aria-expanded": "true",
 							"aria-hidden": "false"
-						})
+						} )
 						.find( "[role=menuitem]:first" )
 							.trigger( "setfocus.wb" );
 				}
@@ -7061,7 +7095,7 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 						$menuLink.trigger( focusEvent );
 
 						// Close the menu but keep the referring link active
-						setTimeout(function() {
+						setTimeout( function() {
 							menuClose( $menuLink.parent(), false );
 						}, 1 );
 
@@ -7117,7 +7151,7 @@ $document.on( "keydown", selector + " [role=menuitem]", function( event ) {
 			}
 		}
 	}
-});
+} );
 
 // Close the mobile panel if switching to medium, large or extra large view
 $document.on( "mediumview.wb largeview.wb xlargeview.wb", function() {
@@ -7125,12 +7159,12 @@ $document.on( "mediumview.wb largeview.wb xlargeview.wb", function() {
 	if ( mobilePanel && mobilePanel.getAttribute( "aria-hidden" ) === "false" ) {
 		$( mobilePanel ).trigger( "close.wb-overlay" );
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Multimedia PLayer
@@ -7139,7 +7173,7 @@ wb.add( selector );
  * @author WET Community
  */
 /* globals YT */
-(function( $, window, wb, undef ) {
+( function( $, window, wb, undef ) {
 "use strict";
 
 /* Local scoped variables*/
@@ -7148,6 +7182,7 @@ var componentName = "wb-mltmd",
 	initEvent = "wb-init" + selector,
 	template,
 	i18n, i18nText,
+	youtubeReadyEvent = "ready.youtube",
 	captionsLoadedEvent = "ccloaded" + selector,
 	captionsLoadFailedEvent = "ccloadfail" + selector,
 	captionsVisibleChangeEvent = "ccvischange" + selector,
@@ -7158,11 +7193,24 @@ var componentName = "wb-mltmd",
 	resizeEvent = "resize" + selector,
 	templateLoadedEvent = "templateloaded" + selector,
 	cuepointEvent = "cuepoint" + selector,
-	interactiveTranscript = "trx" + selector,
 	captionClass = "cc_on",
+	multimediaEvents = [
+		"durationchange",
+		"playing",
+		"pause",
+		"ended",
+		"volumechange",
+		"timeupdate",
+		"waiting",
+		"canplay",
+		"progress",
+		captionsLoadedEvent,
+		captionsLoadFailedEvent,
+		captionsVisibleChangeEvent,
+		cuepointEvent
+	].join( " " ),
 	$document = wb.doc,
 	$window = wb.win,
-	lastTime = 0,
 
 	/**
 	 * @function init
@@ -7198,12 +7246,12 @@ var componentName = "wb-mltmd",
 
 			if ( template === undef ) {
 				template = "";
-				$( eventTarget ).trigger({
+				$( eventTarget ).trigger( {
 					type: "ajax-fetch.wb",
 					fetch: {
 						url: wb.getPath( "/assets" ) + "/mediacontrols.html"
 					}
-				});
+				} );
 			} else if ( template !== "" ) {
 				$( eventTarget ).trigger( templateLoadedEvent );
 			}
@@ -7276,22 +7324,12 @@ var componentName = "wb-mltmd",
 		return -1;
 	},
 
-	// TODO: Document this function
-	expand = function( elm, withPlayer ) {
-		var $this = $( elm ),
-			data = $this.data( "properties" );
-
-		return withPlayer !== undef ?
-			[ $this, data, data.player ] :
-			[ $this, data ];
-	},
-
 	/*
 	 * Peformant micro templater
 	 * @credit: https://github.com/premasagar/tim/blob/master/tinytim.js
 	 * @todo: caching
 	 */
-	tmpl = (function() {
+	tmpl = ( function() {
 		var start = "{{",
 			end = "}}",
 			// e.g. config.person.name
@@ -7315,9 +7353,9 @@ var componentName = "wb-mltmd",
 						return lookup;
 					}
 				}
-			});
+			} );
 		};
-	}()),
+	} () ),
 
 	/**
 	 * @method parseHtml
@@ -7407,7 +7445,7 @@ var componentName = "wb-mltmd",
 	 * @fires ccloadfail.wb-mltmd
 	 */
 	loadCaptionsExternal = function( elm, url ) {
-		$.ajax({
+		$.ajax( {
 			url: url,
 			dataType: "html",
 			//Filters out images and objects from the content to avoid loading them
@@ -7415,20 +7453,20 @@ var componentName = "wb-mltmd",
 				return data.replace( /<img|object [^>]*>/g, "" );
 			},
 			success: function( data ) {
-				elm.trigger({
+				elm.trigger( {
 					type: captionsLoadedEvent,
 					captions: data.indexOf( "<html" ) !== -1 ?
 						parseHtml( $( data ) ) :
 						parseXml( $( data ) )
-				});
+				} );
 			},
 			error: function( response, textStatus, errorThrown ) {
-				elm.trigger({
+				elm.trigger( {
 					type: captionsLoadFailedEvent,
 					error: errorThrown
-				});
+				} );
 			}
-		});
+		} );
 	},
 
 	/**
@@ -7439,10 +7477,10 @@ var componentName = "wb-mltmd",
 	 * @fires ccloaded.wb-mltmd
 	 */
 	loadCaptionsInternal = function( elm, obj ) {
-		elm.trigger({
+		elm.trigger( {
 			type: captionsLoadedEvent,
 			captions: parseHtml( obj )
-		});
+		} );
 	},
 
 	/**
@@ -7465,33 +7503,6 @@ var componentName = "wb-mltmd",
 			caption = captions[ i ];
 			if ( seconds >= caption.begin && seconds <= caption.end ) {
 				area.html( $( "<div>" + caption.text + "</div>" ) );
-			}
-		}
-	},
-
-	/**
-	 * @method highlightTranscript
-	 * @description Highlight transcript position for a multimedia player (called from the timeupdate event of the HTML5 media API)
-	 * @param {Float} seconds The current time of the media (use to sync the captions)
-	 * @param {Object} transcript The JavaScript object containing the transcript
-	 */
-	highlightTranscript = function( seconds, transcript ) {
-		var transcriptSelector = ".wb-tmtxt",
-			transcriptElements = transcript.find( transcriptSelector ),
-			start, end,	len = transcriptElements.length,
-			i, transcriptElement;
-
-		for ( i = 0; i !== len; i += 1 ) {
-			transcriptElement = $( transcriptElements[ i ] );
-			start = parseTime( transcriptElement.attr( "data-begin" ) );
-			end = transcriptElement.attr( "data-end" ) !== undef ?
-					parseTime( transcriptElement.attr( "data-end" ) ) :
-					parseTime( transcriptElement.attr( "data-dur" ) ) + start;
-
-			if (seconds >= start && seconds <= end) {
-				$( ".bg-info" ).removeClass( "bg-info" );
-				transcriptElement.addClass( "bg-info" );
-				return false;
 			}
 		}
 	},
@@ -7563,7 +7574,7 @@ var componentName = "wb-mltmd",
 	 * @param {object} args The arguments to send to the function call
 	 */
 	youTubeApi = function( fn, args ) {
-		var $player = $( this.object.a ),
+		var $media = $( this.object.getIframe() ),
 			state;
 
 		switch ( fn ) {
@@ -7593,7 +7604,7 @@ var componentName = "wb-mltmd",
 				this.object.unMute();
 			}
 			setTimeout( function() {
-				$player.trigger( "volumechange" );
+				$media.trigger( "volumechange" );
 			}, 50 );
 			break;
 		case "getVolume":
@@ -7601,22 +7612,22 @@ var componentName = "wb-mltmd",
 		case "setVolume":
 			this.object.setVolume( args * 100 );
 			setTimeout( function() {
-				$player.trigger( "volumechange" );
+				$media.trigger( "volumechange" );
 			}, 50 );
 			break;
 		case "getCaptionsVisible":
 			return $( this ).hasClass( captionClass );
 		case "setCaptionsVisible":
 			if ( args ) {
-				$( this).addClass( captionClass );
-				this.object.loadModule("cc");
-				this.object.loadModule("captions");
+				$( this ).addClass( captionClass );
+				this.object.loadModule( "cc" );
+				this.object.loadModule( "captions" );
 			} else {
 				$( this ).removeClass( captionClass );
-				this.object.unloadModule("cc");
-				this.object.unloadModule("captions");
+				this.object.unloadModule( "cc" );
+				this.object.unloadModule( "captions" );
 			}
-			$player.trigger( "ccvischange" );
+			$media.trigger( "ccvischange" );
 		}
 	},
 
@@ -7626,36 +7637,39 @@ var componentName = "wb-mltmd",
 	 * @param {object} event The event object fior the triggered event
 	 */
 	youTubeEvents = function( event ) {
-		var playerTarget = event.target.getIframe(),
-			$playerTarget = $( playerTarget ),
+		var media = event.target.getIframe(),
+			$media = $( media ),
 			timeline = function() {
-				$playerTarget.trigger( "timeupdate" );
+				$media.trigger( "timeupdate" );
 			};
 
 		switch ( event.data ) {
 		case null:
-			$playerTarget.trigger( "canplay" );
-			$playerTarget.trigger( "durationchange" );
+			$media
+				.trigger( "canplay" )
+				.trigger( "durationchange" );
 			break;
 		case -1:
 			event.target.unMute();
-			$playerTarget.trigger( "durationchange" );
+			$media.trigger( "durationchange" );
 			break;
 		case 0:
-			$playerTarget.trigger( "ended" );
-			playerTarget.timeline = clearInterval( playerTarget.timeline );
+			$media.trigger( "ended" );
+			media.timeline = clearInterval( media.timeline );
 			break;
 		case 1:
-			$playerTarget.trigger( "canplay" );
-			$playerTarget.trigger( "play" );
-			playerTarget.timeline = setInterval( timeline, 250 );
+			$media
+				.trigger( "canplay" )
+				.trigger( "play" )
+				.trigger( "playing" );
+			media.timeline = setInterval( timeline, 250 );
 			break;
 		case 2:
-			$playerTarget.trigger( "pause" );
-			playerTarget.timeline = clearInterval( playerTarget.timeline );
+			$media.trigger( "pause" );
+			media.timeline = clearInterval( media.timeline );
 			break;
 		case 3:
-			playerTarget.timeline = clearInterval( playerTarget.timeline );
+			media.timeline = clearInterval( media.timeline );
 			break;
 		}
 	},
@@ -7663,7 +7677,7 @@ var componentName = "wb-mltmd",
 	youTubeAPIReady = function() {
 		var youTube = window.youTube;
 		youTube.ready = true;
-		youTube.waitingPlayers.trigger( youtubeEvent );
+		$document.trigger( youtubeReadyEvent );
 	},
 
 	onResize = function() {
@@ -7686,12 +7700,10 @@ $document.on( "ajax-fetched.wb " + templateLoadedEvent, selector, function( even
 		$this = $( selector );
 	}
 
-	$this.data( "template", template );
-
-	$this.trigger({
+	$this.trigger( {
 		type: initializedEvent
-	});
-});
+	} );
+} );
 
 $document.on( initializedEvent, selector, function( event ) {
 	if ( event.namespace === componentName ) {
@@ -7705,7 +7717,7 @@ $document.on( initializedEvent, selector, function( event ) {
 			width = type === "video" ? $media.attr( "width" ) || $media.width() : 0,
 			height = type === "video" ? $media.attr( "height" ) || $media.height() : 0,
 			settings = wb.getData( $this, componentName ),
-			data = $.extend({
+			data = $.extend( {
 				media: $media,
 				captions: captions,
 				id: id,
@@ -7714,7 +7726,7 @@ $document.on( initializedEvent, selector, function( event ) {
 				title: title,
 				height: height,
 				width: width
-			}, i18nText),
+			}, i18nText ),
 			media = $media.get( 0 ),
 			youTube = window.youTube,
 			url;
@@ -7729,25 +7741,19 @@ $document.on( initializedEvent, selector, function( event ) {
 
 		$this.addClass( type );
 
-		$this.data( "properties", data );
-
 		if ( $media.find( "[type='video/youtube']" ).length > 0 ) {
 			// lets tweak some variables and start the load sequence
-			url = wb.getUrlParts( $this.find( "[type='video/youtube']").attr( "src") );
+			url = wb.getUrlParts( $this.find( "[type='video/youtube']" ).attr( "src" ) );
 
 			// lets set the flag for the call back
-			$this.data( "youtube", url.params.v );
-
-			// Method called the the YouTUbe API when ready
+			data.youTubeId = url.params.v;
 
 			if ( youTube.ready === false ) {
-				if ( youTube.waitingPlayers === undef ) {
-					youTube.waitingPlayers = $this;
-				} else {
-					youTube.waitingPlayers = youTube.waitingPlayers.add( $this );
-				}
+				$document.one( youtubeReadyEvent, function() {
+					$this.trigger( youtubeEvent, data );
+				} );
 			} else {
-				$this.trigger( youtubeEvent );
+				$this.trigger( youtubeEvent, data );
 			}
 
 			// finally lets load safely
@@ -7756,40 +7762,39 @@ $document.on( initializedEvent, selector, function( event ) {
 			} );
 
 		} else if ( media.error === null && media.currentSrc !== "" && media.currentSrc !== undef ) {
-			$this.trigger( type + selector );
+			$this.trigger( renderUIEvent, [ type, data ] );
 		} else {
-			$this.trigger( fallbackEvent );
+			$this.trigger( fallbackEvent, data );
 		}
 
 		// Identify that initialization has completed
 		wb.ready( $this, componentName );
 	}
-});
+} );
 
-$document.on( fallbackEvent, selector, function( event ) {
+$document.on( fallbackEvent, selector, function( event, data ) {
 	if ( event.namespace === componentName ) {
-		var ref = expand( this ),
-			$this = ref[ 0 ],
-			data = ref[ 1 ],
+		var $this = $( event.currentTarget ),
 			$media = data.media,
 			type = data.type,
 			source = $media.find( ( type === "video" ? "[type='video/mp4']" : "[type='audio/mp3']" ) ).attr( "src" ),
-			poster = $media.attr( "poster" ),
+			posterUrl = $media.attr( "poster" ),
 			flashvars = "id=" + data.mId,
 			width = data.width,
 			height = data.height > 0 ? data.height : Math.round( data.width / 1.777 ),
-			playerresource = wb.getPath( "/assets" ) + "/multimedia.swf?" + new Date().getTime();
+			playerresource = wb.getPath( "/assets" ) + "/multimedia.swf?" + new Date().getTime(),
+			poster;
 
 		flashvars += "&amp;media=" + encodeURI( wb.getUrlParts( source ).absolute );
 		if ( type === "video" ) {
-			data.poster = "<img src='" + poster + "' class='img-responsive' height='" +
+			poster = "<img src='" + posterUrl + "' class='img-responsive' height='" +
 				height + "' width='" + width + "' alt='" + $media.attr( "title" ) + "'/>";
 
 			flashvars += "&amp;height=" + height + "&amp;width=" +
-				width + "&amp;posterimg=" + encodeURI( wb.getUrlParts( poster ).absolute );
+				width + "&amp;posterimg=" + encodeURI( wb.getUrlParts( posterUrl ).absolute );
 		}
 
-		$this.find( "video, audio" ).replaceWith( "<object id='" + data.mId + "' width='" + width +
+		data.media = $media.replaceWith( "<object id='" + data.mId + "' width='" + width +
 			"' height='" + height + "' class='" + type +
 			"' type='application/x-shockwave-flash' data='" +
 			playerresource + "' tabindex='-1' play='' pause=''>" +
@@ -7798,27 +7803,23 @@ $document.on( fallbackEvent, selector, function( event ) {
 			"<param name='allowScriptAccess' value='always'/>" +
 			"<param name='bgcolor' value='#000000'/>" +
 			"<param name='wmode' value='opaque'/>" +
-			data.poster + "</object>" );
-		$this.data( "properties", data );
-		$this.trigger( renderUIEvent, type );
+			poster + "</object>" );
+
+		$this.trigger( renderUIEvent, [ type, data ] );
 	}
-});
+} );
 
 /*
  *  Youtube Video mode Event
  */
-$document.on( youtubeEvent, selector, function( event ) {
+$document.on( youtubeEvent, selector, function( event, data ) {
 	if ( event.namespace === componentName ) {
-		var ref = expand( this ),
-			ytPlayer,
-			$this = ref[ 0 ],
-			data = ref[ 1 ],
-			$media = data.media,
-			id = $media.get( 0 ).id;
+		var mId = data.mId,
+			$this = $( event.currentTarget ),
+			$media, ytPlayer;
 
-		$media.replaceWith( "<div id=" + id + "/>" );
-		ytPlayer = new YT.Player( id, {
-			videoId: $this.data( "youtube" ),
+		ytPlayer = new YT.Player( mId, {
+			videoId: data.youTubeId,
 			playerVars: {
 				autoplay: 0,
 				controls: 0,
@@ -7841,88 +7842,44 @@ $document.on( youtubeEvent, selector, function( event ) {
 					t.player( "setCaptionsVisible", t.player( "getCaptionsVisible" ) );
 				}
 			}
-		});
+		} );
 
 		$this.addClass( "youtube" );
 
-		$this.find( "iframe" ).attr( "tabindex", -1 );
+		$media = $this.find( "#" + mId ).attr( "tabindex", -1 );
 
-		data.poster = "<img src='" + $media.attr( "poster" ) +
-			"' class='img-responsive' height='" + data.height +
-			"' width='" + data.width + "' alt='" + data.media.attr( "title" ) + "'/>";
+		data.media = $media;
 		data.ytPlayer = ytPlayer;
 
-		$this.data( "properties", data );
-		$this.trigger( renderUIEvent, "youtube" );
+		$this.trigger( renderUIEvent, [ "youtube", data ] );
 	}
-});
+} );
 
-/*
- *  Native Video mode Event
- */
-$document.on( "video" + selector, selector, function( event ) {
+$document.on( renderUIEvent, selector, function( event, type, data ) {
 	if ( event.namespace === componentName ) {
-		var ref = expand( this ),
-			$this = ref[ 0 ],
-			data = ref[ 1 ];
-
-		data.poster = "<img src='" + data.media.attr( "poster" ) +
-			"' class='img-responsive' height='" + data.height +
-			"' width='" + data.width + "' alt='" + data.media.attr( "title" ) + "'/>";
-
-		$this.data( "properties", data );
-
-		$this.trigger( renderUIEvent, "video" );
-	}
-});
-
-/*
- *  Native Audio mode Event
- */
-$document.on( "audio" + selector, selector, function( event ) {
-	if ( event.namespace === componentName ) {
-		var ref = expand (this ),
-			$this = ref[ 0 ],
-			data = ref[ 1 ];
-
-		data.poster = "";
-
-		$this.data( "properties", data );
-
-		$this.trigger( renderUIEvent, "audio" );
-	}
-});
-
-$document.on( renderUIEvent, selector, function( event, type ) {
-	if ( event.namespace === componentName ) {
-		var ref = expand( this ),
-			$this = ref[ 0 ],
-			data = ref[ 1 ],
+		var $this = $( event.currentTarget ),
 			captionsUrl = wb.getUrlParts( data.captions ),
 			currentUrl = wb.getUrlParts( window.location.href ),
-			$media = $this.find( "video, audio, iframe, object" ),
-			$player, $overlay, $share;
+			$media = data.media,
+			$eventReceiver, $share;
 
-		$media.after( tmpl( $this.data( "template" ), data ) );
-		$overlay = $media.next().find( ".wb-mm-ovrly" ).after( $media );
+		$media
+			.after( tmpl( template, data ) )
+			.wrap( "<div class=\"display\"></div>" );
 
-		$player = $( "#" + data.mId );
-		data.player = $player.is( "object" ) ? $player.children( ":first-child" ) : $player;
+		$eventReceiver = $media.is( "object" ) ? $media.children( ":first-child" ) : $media;
 
 		// Create an adapter for the event management
-		data.player.on( "durationchange play pause ended volumechange timeupdate " +
-			captionsLoadedEvent + " " + captionsLoadFailedEvent + " " +
-			captionsVisibleChangeEvent + " " + interactiveTranscript + " waiting canplay progress", function( event ) {
+		$eventReceiver.on( multimediaEvents, function( event ) {
 			$this.trigger( event );
-		});
+		} );
 
-		this.object = data.ytPlayer || $player.get( 0 );
+		this.object = data.ytPlayer || $media.get( 0 );
 		this.player = ( data.ytPlayer ) ? youTubeApi : playerApi;
-		$this.data( "properties", data );
 
 		// Trigger the duration change for cases where the event was called before the event binding
 		if ( type !== "youtube" && !isNaN( this.player( "getDuration" ) ) ) {
-			data.player.trigger( "durationchange" );
+			$eventReceiver.trigger( "durationchange" );
 		}
 
 		// Load the progress polyfill if needed
@@ -7932,7 +7889,6 @@ $document.on( renderUIEvent, selector, function( event, type ) {
 		$this.find( "input[type='range']" ).trigger( "wb-init.wb-slider" );
 
 		// Create the share widgets if needed
-		// TODO: Remove .parent() when getting rid of the overlay
 		if ( data.shareUrl !== undef ) {
 			$share = $( "<div class='wb-share' data-wb-share=\'{\"type\": \"" +
 				( type === "audio" ? type : "video" ) + "\", \"title\": \"" +
@@ -7948,12 +7904,12 @@ $document.on( renderUIEvent, selector, function( event, type ) {
 
 		// Load the captions
 		if ( currentUrl.absolute.replace( currentUrl.hash || "#", "" ) !== captionsUrl.absolute.replace( captionsUrl.hash || "#", "" ) ) {
-			loadCaptionsExternal( $player, captionsUrl.absolute );
+			loadCaptionsExternal( $media, captionsUrl.absolute );
 		} else {
-			loadCaptionsInternal( $player, $( "#" + wb.jqEscape( captionsUrl.hash.substring( 1 ) ) ) );
+			loadCaptionsInternal( $media, $( "#" + wb.jqEscape( captionsUrl.hash.substring( 1 ) ) ) );
 		}
 	}
-});
+} );
 
 /*
  * UI Bindings
@@ -7971,8 +7927,8 @@ $document.on( "click", selector, function( event ) {
 	// Optimized multiple class tests to include child glyphicon because Safari was reporting the click event
 	// from the child span not the parent button, forcing us to have to check for both elements
 	// JSPerf for multiple class matching http://jsperf.com/hasclass-vs-is-stackoverflow/7
-	if ( className.match( /playpause|-play|-pause|wb-mm-ovrly/ ) || $target.is( "object" ) ) {
-		this.player( "getPaused" ) ? this.player( "play" ) : this.player( "pause" );
+	if ( className.match( /playpause|-play|-pause|display/ ) || $target.is( "object" ) || $target.is( "video" ) ) {
+		this.player( "getPaused" ) || this.player( "getEnded" ) ? this.player( "play" ) : this.player( "pause" );
 	} else if ( className.match( /\bcc\b|-subtitles/ )  ) {
 		this.player( "setCaptionsVisible", !this.player( "getCaptionsVisible" ) );
 	} else if ( className.match( /\bmute\b|-volume-(up|off)/ ) ) {
@@ -7980,29 +7936,28 @@ $document.on( "click", selector, function( event ) {
 	} else if ( $target.is( "progress" ) || $target.hasClass( "progress" ) || $target.hasClass( "progress-bar" ) ) {
 		this.player( "setCurrentTime", this.player( "getDuration" ) * ( ( event.pageX - $target.offset().left ) / $target.width() ) );
 	} else if ( className.match( /\brewind\b|-backward/ ) ) {
-		this.player( "setCurrentTime", this.player( "getCurrentTime" ) - this.player( "getDuration" ) * 0.05);
+		this.player( "setCurrentTime", this.player( "getCurrentTime" ) - this.player( "getDuration" ) * 0.05 );
 	} else if ( className.match( /\bfastforward\b|-forward/ ) ) {
-		this.player( "setCurrentTime", this.player( "getCurrentTime" ) + this.player( "getDuration" ) * 0.05);
+		this.player( "setCurrentTime", this.player( "getCurrentTime" ) + this.player( "getDuration" ) * 0.05 );
 	} else if ( className.match( /cuepoint/ ) ) {
-		$(this).trigger( { type: "cuepoint", cuepoint: $target.data( "cuepoint" ) } );
+		$( this ).trigger( { type: "cuepoint", cuepoint: $target.data( "cuepoint" ) } );
 	}
-});
+} );
 
-$document.on( "input change", selector, function(event) {
+$document.on( "input change", selector, function( event ) {
 	var target = event.target;
 
 	if ( $( target ).hasClass( "volume" ) ) {
 		event.currentTarget.player( "setMuted", false );
 		event.currentTarget.player( "setVolume", target.value / 100 );
 	}
-});
+} );
 
 $document.on( "keydown", selector, function( event ) {
-	var playerTarget = event.currentTarget,
+	var $this = $( event.currentTarget ),
+		playerTarget = event.currentTarget,
 		which = event.which,
 		ctrls = ".wb-mm-ctrls",
-		ref = expand( playerTarget ),
-		$this = ref[ 0 ],
 		volume = 0,
 		step = 0.05;
 
@@ -8013,11 +7968,11 @@ $document.on( "keydown", selector, function( event ) {
 			break;
 
 		case 37:
-			playerTarget.player( "setCurrentTime", this.player( "getCurrentTime" ) - this.player( "getDuration" ) * 0.05);
+			playerTarget.player( "setCurrentTime", this.player( "getCurrentTime" ) - this.player( "getDuration" ) * 0.05 );
 			break;
 
 		case 39:
-			playerTarget.player( "setCurrentTime", this.player( "getCurrentTime" ) + this.player( "getDuration" ) * 0.05);
+			playerTarget.player( "setCurrentTime", this.player( "getCurrentTime" ) + this.player( "getDuration" ) * 0.05 );
 			break;
 
 		case 38:
@@ -8035,7 +7990,7 @@ $document.on( "keydown", selector, function( event ) {
 		}
 		return false;
 	}
-});
+} );
 
 $document.on( "keyup", selector, function( event ) {
 	if ( event.which === 32 && !( event.ctrlKey || event.altKey || event.metaKey ) ) {
@@ -8043,42 +7998,35 @@ $document.on( "keyup", selector, function( event ) {
 		// Allows the spacebar to be used for play/pause without double triggering
 		return false;
 	}
-});
+} );
 
-// TODO: recode with a more efficient to use the API than DOM crawling
-$document.on( "wb-activate", selector, function( event ) {
-    var playerTarget = event.currentTarget,
-        ctrls = ".wb-mm-ctrls",
-        ref = expand( playerTarget ),
-        $this = ref[ 0 ];
-    $this.find( ctrls + " .playpause" ).trigger( "click" );
-});
+$document.on( "wb-activate", selector, function() {
+    this.player( "play" );
+} );
 
-$document.on( "durationchange play pause ended volumechange timeupdate " +
-	captionsLoadedEvent + " " + captionsLoadFailedEvent + " " +
-	captionsVisibleChangeEvent + " " + cuepointEvent + " " + interactiveTranscript +
-	" waiting canplay", selector, function( event, simulated ) {
-
+$document.on( multimediaEvents, selector, function( event, simulated ) {
 	var eventTarget = event.currentTarget,
 		eventType = event.type,
 		eventNamespace = event.namespace,
 		$this = $( eventTarget ),
 		invStart = "<span class='wb-inv'>",
 		invEnd = "</span>",
-		currentTime, $button, $slider, buttonData, isPlay, isMuted, isCCVisible, ref, skipTo, volume;
+		currentTime, $button, $slider, buttonData, isPlay, isMuted, isCCVisible, skipTo, volume;
 	switch ( eventType ) {
-	case "play":
+	case "playing":
 	case "pause":
 	case "ended":
-		isPlay = eventType === "play";
+		isPlay = eventType === "playing";
 		$button = $this.find( ".playpause" );
 		buttonData = $button.data( "state-" + ( isPlay ? "off" : "on" ) );
 		if ( isPlay ) {
-			$this.find( ".wb-mm-ovrly" ).addClass( "playing" );
+			$this.addClass( "playing" );
 			$this.find( ".progress" ).addClass( "active" );
-		} else if ( eventType === "ended" ) {
-			this.loading = clearTimeout( this.loading );
-			$this.find( ".wb-mm-ovrly" ).removeClass( "playing" );
+		} else {
+			if ( eventType === "ended" ) {
+				this.loading = clearTimeout( this.loading );
+			}
+			$this.removeClass( "playing" );
 		}
 		$button
 			.attr( "title", buttonData )
@@ -8125,16 +8073,6 @@ $document.on( "durationchange play pause ended volumechange timeupdate " +
 				$.data( eventTarget, "captions" )
 			);
 		}
-		// highlight transcript section every second
-		if ( $(this).find(".inline-captions").length > 0 ) {
-			if ( currentTime > lastTime + 1 ) {
-				highlightTranscript(
-					currentTime,
-					$this.find( ".inline-captions" )
-				);
-				lastTime = currentTime;
-			}
-		}
 		break;
 
 	case "durationchange":
@@ -8142,8 +8080,7 @@ $document.on( "durationchange play pause ended volumechange timeupdate " +
 			.text( formatTime( eventTarget.player( "getDuration" ) ) );
 
 		// Skip to pointer from the querystring
-		ref = expand( this );
-		skipTo = wb.pageUrlParts.params[ ref[ 1 ].id ];
+		skipTo = wb.pageUrlParts.params[ event.target.id ];
 		if ( skipTo ) {
 				skipTo = parseTime( skipTo );
 				eventTarget.player( "setCurrentTime", skipTo );
@@ -8183,19 +8120,19 @@ $document.on( "durationchange play pause ended volumechange timeupdate " +
 			$document.off( "progress", selector );
 		}
 		this.loading = setTimeout( function() {
-			$this.find( ".display" ).addClass( "waiting" );
+			$this.addClass( "waiting" );
 		}, 500 );
 		break;
 
 	case "canplay":
 		this.loading = clearTimeout( this.loading );
-		$this.find( ".display" ).removeClass( "waiting" );
+		$this.removeClass( "waiting" );
 		break;
 	case "cuepoint":
 		eventTarget.player( "setCurrentTime", parseTime( event.cuepoint ) );
 		break;
 	}
-});
+} );
 
 // Fallback for browsers that don't implement the waiting events
 $document.on( "progress", selector, function( event ) {
@@ -8215,28 +8152,28 @@ $document.on( "progress", selector, function( event ) {
 		$this.trigger( "canplay", true );
 	}
 	eventTarget.player( "setPreviousTime", eventTarget.player( "getCurrentTime" ) );
-});
+} );
 
 $document.on( resizeEvent, selector, function( event ) {
 	if ( event.namespace === componentName ) {
-		var player = event.target,
-			$player = $( player ),
+		var media = event.target,
+			$media = $( media ),
 			ratio, newHeight;
 
 		if ( $( event.currentTarget ).hasClass( "video" ) ) {
-			if ( player.videoWidth === 0 || player.videoWidth === undef ) {
-				ratio = $player.attr( "height" ) / $player.attr( "width" );
+			if ( media.videoWidth === 0 || media.videoWidth === undef ) {
+				ratio = $media.attr( "height" ) / $media.attr( "width" );
 
 				// Calculate the new height based on the specified ratio or assume a default 16:9 ratio
-				newHeight = Math.round( $player.width() * ( !isNaN( ratio ) ? ratio : 0.5625 ) );
+				newHeight = Math.round( $media.width() * ( !isNaN( ratio ) ? ratio : 0.5625 ) );
 
-				$player.css( "height", newHeight + "px" );
+				$media.css( "height", newHeight + "px" );
 			} else {
-				$player.css( "height", "" );
+				$media.css( "height", "" );
 			}
 		}
 	}
-});
+} );
 
 window.onYouTubeIframeAPIReady = youTubeAPIReady;
 
@@ -8246,7 +8183,7 @@ window.youTube = {
 
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW NavCurrent
@@ -8254,7 +8191,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -8384,7 +8321,7 @@ var componentName = "wb-navcurr",
 // Bind the navcurrent event of the plugin
 $document.on( "navcurr.wb", init );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Overlay
@@ -8392,7 +8329,7 @@ $document.on( "navcurr.wb", init );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @thomasgohard, @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -8476,7 +8413,7 @@ var componentName = "wb-overlay",
 		// Register the overlay if it wasn't previously registered
 		// (only required when opening through an event)
 		if ( !sourceLinks[ overlayId ] ) {
-			setTimeout(function() {
+			setTimeout( function() {
 				sourceLinks[ overlayId ] = null;
 			}, 1 );
 		}
@@ -8562,7 +8499,7 @@ $document.on( "timerpoke.wb " + initEvent + " keydown open" + selector +
 			break;
 		}
 	}
-});
+} );
 
 // Handler for clicking on the close button of the overlay
 $document.on( "click vclick", "." + closeClass, function( event ) {
@@ -8576,7 +8513,7 @@ $document.on( "click vclick", "." + closeClass, function( event ) {
 			true
 		);
 	}
-});
+} );
 
 // Handler for clicking on a source link for the overlay
 $document.on( "click vclick", "." + linkClass, function( event ) {
@@ -8589,7 +8526,7 @@ $document.on( "click vclick", "." + linkClass, function( event ) {
 		event.preventDefault();
 
 		// Introduce a delay to prevent outside activity detection
-		setTimeout(function() {
+		setTimeout( function() {
 
 			// Stores the source link for the overlay
 			sourceLinks[ overlayId ] = sourceLink;
@@ -8598,7 +8535,7 @@ $document.on( "click vclick", "." + linkClass, function( event ) {
 			openOverlay( overlayId );
 		}, 1 );
 	}
-});
+} );
 
 // Handler for clicking on a same page link within the overlay to outside the overlay
 $document.on( "click vclick", selector + " a[href^='#']", function( event ) {
@@ -8627,7 +8564,7 @@ $document.on( "click vclick", selector + " a[href^='#']", function( event ) {
 			$( linkTarget ).trigger( setFocusEvent );
 		}
 	}
-});
+} );
 
 // Outside activity detection
 $document.on( "click vclick touchstart focusin", "body", function( event ) {
@@ -8651,12 +8588,12 @@ $document.on( "click vclick touchstart focusin", "body", function( event ) {
 			}
 		}
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Prettify Plugin
@@ -8690,7 +8627,7 @@ wb.add( selector );
  *    - lang-xq
  *    - lang-yaml
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -8758,12 +8695,12 @@ var componentName = "wb-prettify",
 			}
 
 			// Load the required dependencies and prettify the code once finished
-			Modernizr.load({
+			Modernizr.load( {
 				load: deps,
 				complete: function() {
 					$document.trigger( prettyPrintEvent );
 				}
-			});
+			} );
 		}
 	},
 
@@ -8793,7 +8730,7 @@ $document
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Resize
@@ -8801,7 +8738,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -8942,7 +8879,7 @@ $document.trigger( initEvent );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Session Timeout
@@ -8950,7 +8887,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @patheard
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -9036,7 +8973,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 			};
 
 			// Create the modal dialog
-			initModalDialog(onReady);
+			initModalDialog( onReady );
 		}
 	},
 
@@ -9053,7 +8990,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 		clearTimeout( $elm.data( eventName ) );
 
 		// Create the new timeout that will trigger the event
-		$elm.data( eventName, setTimeout(function() {
+		$elm.data( eventName, setTimeout( function() {
 			$elm.trigger( eventName, settings );
 		}, parseTime( time ) ) );
 	},
@@ -9089,7 +9026,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 
 			// Get object references to the modal and its triggering link
 			$modalLink = $modal.prev()
-				.one( "wb-ready.wb-lbx", callback)
+				.one( "wb-ready.wb-lbx", callback )
 				.trigger( "wb-init.wb-lbx" );
 		} else {
 			callback();
@@ -9122,7 +9059,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 					}
 					$elm.data( "lastActivity", currentTime );
 				}
-			});
+			} );
 		}
 	},
 
@@ -9147,14 +9084,14 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 					clearTimeout( $elm.data( inactivityEvent ) );
 					clearTimeout( $elm.data( keepaliveEvent ) );
 
-					openModal({
+					openModal( {
 						body: "<p>" + i18nText.timeoutAlready + "</p>",
 						buttons: $( "<button type='button' class='" + confirmClass +
 							" btn btn-primary'>" + i18nText.buttonSignin + "</button>" )
 								.data( "logouturl", settings.logouturl )
-					});
+					} );
 				}
-			});
+			} );
 		}
 	},
 
@@ -9184,13 +9121,13 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 			i18nText.buttonEnd + buttonEnd )
 				.data( "logouturl", settings.logouturl );
 
-		openModal({
+		openModal( {
 			body: "<p>" + timeoutBegin + "<br />" + i18nText.timeoutEnd + "</p>",
 			buttons: [ $buttonContinue, $buttonEnd ],
 			open: function() {
 				var $minutes = $modal.find( ".min" ),
 					$seconds = $modal.find( ".sec" );
-				countdownInterval = setInterval(function() {
+				countdownInterval = setInterval( function() {
 					if ( countdown( $minutes, $seconds ) ) {
 						clearInterval( countdownInterval );
 
@@ -9201,7 +9138,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 					}
 				}, 1000 );
 			}
-		});
+		} );
 	},
 
 	/**
@@ -9373,14 +9310,14 @@ $document.on( "timerpoke.wb " + initEvent + " " + keepaliveEvent + " " +
 		reset( event, settings );
 		break;
 	}
-});
+} );
 
 $document.on( "click", "." + confirmClass, confirm );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Share widget
@@ -9388,7 +9325,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -9585,9 +9522,9 @@ var componentName = "wb-share",
 				}
 
 				// i18n-friendly sort of the site keys
-				keys.sort(function( x, y ) {
+				keys.sort( function( x, y ) {
 					return wb.normalizeDiacritics( x ).localeCompare( wb.normalizeDiacritics( y ) );
-				});
+				} );
 				len = keys.length;
 
 				// Generate the panel
@@ -9632,7 +9569,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Tables
@@ -9640,7 +9577,8 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @jeresiv
  */
-(function( $, window, wb ) {
+ /*jshint scripturl:true*/
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -9696,7 +9634,8 @@ var componentName = "wb-tables",
 						first: i18n( "first" ),
 						last: i18n( "last" ),
 						next: i18n( "nxt" ),
-						previous: i18n( "prv" )
+						previous: i18n( "prv" ),
+						page: i18n( "page" )
 					},
 					processing: i18n( "process" ),
 					search: i18n( "filter" ),
@@ -9711,7 +9650,7 @@ var componentName = "wb-tables",
 				dom: "<'top'ilf>rt<'bottom'p><'clear'>"
 			};
 
-			Modernizr.load({
+			Modernizr.load( {
 				load: [ "site!deps/jquery.dataTables" + wb.getMode() + ".js" ],
 				complete: function() {
 					var $elm = $( "#" + elmId ),
@@ -9773,7 +9712,7 @@ var componentName = "wb-tables",
 					// Create the DataTable object
 					$elm.dataTable( $.extend( true, {}, defaults, window[ componentName ], wb.getData( $elm, componentName ) ) );
 				}
-			});
+			} );
 		}
 	};
 
@@ -9786,10 +9725,16 @@ $document.on( "init.dt draw.dt", selector, function( event, settings ) {
 
 	// Update the aria-pressed properties on the pagination buttons
 	// Should be pushed upstream to DataTables
-	$( ".dataTables_paginate a" )
-		.attr( "role", "button" )
+	$elm.next( ".bottom" ).find( ".paginate_button" )
+		.attr( {
+			"role": "button",
+			"href": "javascript:;"
+		} )
 		.not( ".previous, .next" )
 			.attr( "aria-pressed", "false" )
+			.html( function( index, oldHtml ) {
+				return "<span class='wb-inv'>" + i18nText.paginate.page + " </span>" + oldHtml;
+			} )
 			.filter( ".current" )
 				.attr( "aria-pressed", "true" );
 
@@ -9801,12 +9746,12 @@ $document.on( "init.dt draw.dt", selector, function( event, settings ) {
 
 	// Identify that the table has been updated
 	$elm.trigger( "wb-updated" + selector, [ settings ] );
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Tabbed interface
@@ -9814,7 +9759,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -9830,7 +9775,7 @@ var componentName = "wb-tabs",
 	selectEvent = "wb-select" + selector,
 	updatedEvent = "wb-updated" + selector,
 	setFocusEvent = "setfocus.wb",
-	controls = selector + " [role=tablist] a, " + selector + " [role=tablist] .tab-count",
+	controls = selector + " ul[role=tablist] a, " + selector + " ul[role=tablist] .tab-count",
 	initialized = false,
 	equalHeightClass = "wb-eqht",
 	equalHeightOffClass = equalHeightClass + "-off",
@@ -9849,7 +9794,8 @@ var componentName = "wb-tabs",
 	defaults = {
 		excludePlay: false,
 		interval: 6,
-		updateHash: false
+		updateHash: false,
+		ignoreSession: false
 	},
 
 	/**
@@ -9883,6 +9829,7 @@ var componentName = "wb-tabs",
 			activeId = wb.jqEscape( wb.pageUrlParts.hash.substring( 1 ) );
 			$openPanel = activeId.length !== 0 ? $panels.filter( "#" + activeId ) : undefined;
 			elmId = elm.id;
+
 			settings = $.extend(
 				true,
 				{},
@@ -9893,7 +9840,8 @@ var componentName = "wb-tabs",
 									3 : defaults.interval,
 					excludePlay: $elm.hasClass( "exclude-play" ),
 					updateHash: $elm.hasClass( "update-hash" ),
-					playing: $elm.hasClass( "playing" )
+					playing: $elm.hasClass( "playing" ),
+					ignoreSession: $elm.hasClass( "ignore-session" )
 				},
 				window[ componentName ],
 				wb.getData( $elm, componentName )
@@ -9904,7 +9852,9 @@ var componentName = "wb-tabs",
 				// If the panel was not set by URL hash, then attempt to
 				// retrieve from sessionStorage
 				if ( !$openPanel || $openPanel.length === 0 ) {
-					activeId = sessionStorage.getItem( pagePath + elmId + activePanel );
+					if ( !settings.ignoreSession ) {
+						activeId = sessionStorage.getItem( pagePath + elmId + activePanel );
+					}
 					if ( activeId ) {
 						$openPanel = $panels.filter( "#" + activeId );
 					}
@@ -9912,9 +9862,11 @@ var componentName = "wb-tabs",
 				// If the panel was set by URL hash, then store in sessionStorage
 				} else {
 					hashFocus = true;
-					try {
-						sessionStorage.setItem( pagePath + elmId + activePanel, activeId );
-					} catch ( error ) {
+					if ( !settings.ignoreSession ) {
+						try {
+							sessionStorage.setItem( pagePath + elmId + activePanel, activeId );
+						} catch ( error ) {
+						}
 					}
 				}
 			} catch ( error ) {
@@ -9935,7 +9887,7 @@ var componentName = "wb-tabs",
 					space: i18n( "space" ),
 					hyphen: i18n( "hyphen" ),
 					pause: i18n( "pause" ),
-					tabCount: i18n( "lb-curr")
+					tabCount: i18n( "lb-curr" )
 				};
 			}
 
@@ -9985,10 +9937,10 @@ var componentName = "wb-tabs",
 							$panel.toggleClass( "open", isOpen );
 						}
 					} else {
-						$panel.attr({
+						$panel.attr( {
 							role: "tabpanel",
 							open: open
-						});
+						} );
 						$panel.addClass( ( Modernizr.details ? "" :  open + " " ) +
 							"fade " + ( isOpen ? "in" : "out wb-inv" ) );
 					}
@@ -10040,7 +9992,7 @@ var componentName = "wb-tabs",
 			if ( hashFocus ) {
 
 				// Need a slight delay to allow for the reflow
-				setTimeout(function() {
+				setTimeout( function() {
 					positionY = $tablist.offset().top;
 					if ( positionY < document.body.scrollTop ) {
 						document.body.scrollTop = positionY;
@@ -10048,14 +10000,14 @@ var componentName = "wb-tabs",
 				}, 1 );
 			}
 
-			$elm.data({
+			$elm.data( {
 				"wb-tabs": {
 					panels: $panels,
 					tablist: $tablist,
 					settings: settings,
 					ctime: 0
 				}
-			});
+			} );
 
 			initialized = true;
 			onResize( $elm );
@@ -10204,6 +10156,7 @@ var componentName = "wb-tabs",
 			newIndex = $tabs.index( $control ) + 1,
 			$currPanel = $panels.filter( ".in" ),
 			$container = $next.closest( selector ),
+			tabSettings = $container.data( componentName ).settings,
 			mPlayers = $currPanel.find( ".wb-mltmd-inited" ).get(),
 			mPlayersLen = mPlayers.length,
 			mPlayer, i, j, last;
@@ -10223,10 +10176,10 @@ var componentName = "wb-tabs",
 		$currPanel
 			.removeClass( "in" )
 			.addClass( "out" )
-			.attr({
+			.attr( {
 				"aria-hidden": "true",
 				"aria-expanded": "false"
-			});
+			} );
 
 		// Pause all multimedia players in the current panel
 		for ( i = 0; i !== mPlayersLen; i += 1 ) {
@@ -10239,19 +10192,19 @@ var componentName = "wb-tabs",
 		$next
 			.removeClass( "out" )
 			.addClass( "in" )
-			.attr({
+			.attr( {
 				"aria-hidden": "false",
 				"aria-expanded": "true"
-			});
+			} );
 
 		$controls
 			.find( ".active" )
 				.removeClass( "active" )
 				.children( "a" )
-					.attr({
+					.attr( {
 						"aria-selected": "false",
 						tabindex: "-1"
-					});
+					} );
 
 		// Update the Item x of n
 		$controls
@@ -10259,24 +10212,26 @@ var componentName = "wb-tabs",
 				.html( newIndex );
 
 		$control
-			.attr({
+			.attr( {
 				"aria-selected": "true",
 				tabindex: "0"
-			})
+			} )
 			.parent()
 				.addClass( "active" );
 
 		// Update sessionStorage with the current active panel
-		try {
-			sessionStorage.setItem(
-				pagePath + $container.attr( "id" ) + activePanel,
-				$next.attr( "id" )
-			);
-		} catch ( error ) {
+		if ( !tabSettings.ignoreSession ) {
+			try {
+				sessionStorage.setItem(
+					pagePath + $container.attr( "id" ) + activePanel,
+					$next.attr( "id" )
+				);
+			} catch ( error ) {
+			}
 		}
 
 		// Update the URL hash if needed
-		if ( $container.data( componentName ).settings.updateHash ) {
+		if ( tabSettings.updateHash ) {
 			updateHash( $next[ 0 ] );
 		}
 
@@ -10321,17 +10276,22 @@ var componentName = "wb-tabs",
 	 */
 	onSelect = function( id, autoCycle ) {
 		var panelSelector = "#" + id,
-			$panel = $( panelSelector );
+			$panel = $( panelSelector ),
+			$panelSelectorLink;
 
 		if ( isSmallView && $panel[ 0 ].nodeName.toLowerCase() === "details" ) {
 			$panel.children( "summary" ).trigger( $panel.attr( "open" ) ? setFocusEvent : "click" );
 		} else {
-			$( panelSelector + "-lnk" )
-				.trigger({
-					type: "click",
-					which: autoCycle ? undefined : 1
-				})
-				.trigger( setFocusEvent );
+			$panelSelectorLink = $( panelSelector + "-lnk" );
+			$panelSelectorLink.trigger( {
+				type: "click",
+				which: autoCycle ? undefined : 1
+			} );
+
+			// Don't change the focus if change is cause by an auto cycle
+			if ( !autoCycle ) {
+				$panelSelectorLink.trigger( setFocusEvent );
+			}
 		}
 	},
 
@@ -10341,10 +10301,10 @@ var componentName = "wb-tabs",
 	 * @param {integer} shifto The item to shift to
 	 */
 	onCycle = function( $elm, shifto ) {
-		$elm.trigger({
+		$elm.trigger( {
 			type: shiftEvent,
 			shiftto: shifto
-		});
+		} );
 	},
 
 	/**
@@ -10399,25 +10359,25 @@ var componentName = "wb-tabs",
 							$openDetails = ( $openDetails.length === 0 ? $details : $openDetails ).eq( 0 );
 
 							$details
-								.attr({
+								.attr( {
 									role: "tabpanel",
 									open: "open"
-								})
+								} )
 								.not( $openDetails )
 									.addClass( "fade out wb-inv" )
-									.attr({
+									.attr( {
 										"aria-hidden": "true",
 										"aria-expanded": "false"
-									});
+									} );
 
 							$details.children( ".tgl-panel" ).removeAttr( "role" );
 
 							$openDetails
 								.addClass( "fade in" )
-								.attr({
+								.attr( {
 										"aria-hidden": "false",
 										"aria-expanded": "true"
-									});
+									} );
 						}
 
 						// Enable equal heights for large view or disable for small view
@@ -10445,7 +10405,7 @@ var componentName = "wb-tabs",
 
 				// Need timeout to account for Toggle changes
 				if ( isInit && !isSmallView && $elms.hasClass( tabsAccordionClass ) ) {
-					setTimeout(function() {
+					setTimeout( function() {
 						$elms
 							.removeAttr( "role" )
 							.find( nestedTglPanelSelector ).removeAttr( "role" );
@@ -10459,7 +10419,7 @@ var componentName = "wb-tabs",
 		if ( viewChange || isInit ) {
 
 			// Remove wb-inv from regular tabs that were used to prevent FOUC (after 300ms delay)
-			setTimeout(function() {
+			setTimeout( function() {
 				$( selector + " .tabpanels > details.wb-inv" ).removeClass( "wb-inv" );
 			}, 300 );
 		}
@@ -10511,7 +10471,7 @@ var componentName = "wb-tabs",
 	 * so returning true allows for events to always continue
 	 */
 	return true;
- });
+ } );
 
  /*
   * Tabs, next, previous and play/pause
@@ -10580,7 +10540,11 @@ var componentName = "wb-tabs",
 
 			// If the target is a tab
 			if ( elm.getAttribute( "role" ) === "tab" ) {
-				onPick( $sldr, $elm );
+
+				// Only change the tabpanel if the tab is not currently selected
+				if ( elm.getAttribute( "aria-selected" ) !== "true" ) {
+					onPick( $sldr, $elm );
+				}
 
 				// Put focus on the tab panel if the enter key or space bar are used
 				if ( which === 13 || which === 32 ) {
@@ -10600,7 +10564,7 @@ var componentName = "wb-tabs",
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 $document.on( activateEvent, selector + " [role=tabpanel]", function( event ) {
 	var currentTarget = event.currentTarget,
@@ -10636,7 +10600,7 @@ $document.on( activateEvent, selector + " [role=tabpanel]", function( event ) {
 			$container.find( ".plypause" ).trigger( "click" );
 		}
 	}
-});
+} );
 
 // Handling for links to tabs from within a panel
 $document.on( "click", selector + " [role=tabpanel] a", function( event ) {
@@ -10659,7 +10623,7 @@ $document.on( "click", selector + " [role=tabpanel] a", function( event ) {
 			}
 		}
 	}
-});
+} );
 
 // These events only fire at the document level
 $document.on( wb.resizeEvents, onResize );
@@ -10667,33 +10631,38 @@ $document.on( wb.resizeEvents, onResize );
 $document.on( activateEvent, selector + " > .tabpanels > details > summary", function( event ) {
 	var which = event.which,
 		details = event.currentTarget.parentNode,
-		$details, $container;
+		$details, $container, tabSettings;
 
 	if ( !( event.ctrlKey || event.altKey || event.metaKey ) &&
 		( !which || which === 1 || which === 13 || which === 32 ) ) {
 
+		$container = $( details.parentNode.parentNode );
 		$details = $( details );
+		tabSettings = $container.data( componentName ).settings;
 
 		// Update sessionStorage with the current active panel
-		try {
-			sessionStorage.setItem(
-				pagePath + $details.closest( selector ).attr( "id" ) + activePanel,
-				details.id
-			);
-		} catch ( error ) {
+		if ( !tabSettings.ignoreSession ) {
+			try {
+				sessionStorage.setItem(
+					pagePath + $container.attr( "id" ) + activePanel,
+					details.id
+				);
+			} catch ( error ) {
+			}
 		}
 
-		$container = $details.closest( selector );
-
 		// Update the URL hash if needed
-		if ( $container.data( componentName ).settings.updateHash ) {
+		if ( tabSettings.updateHash ) {
 			updateHash( details );
 		}
 
-		// Identify that the tabbed interface was updated
-		$container.trigger( updatedEvent, [ $details ] );
+		// Identify that the tabbed interface accordion was updated
+		// if the panel was not already open
+		if ( !$details.attr( "open" ) ) {
+			$container.trigger( updatedEvent, [ $details ] );
+		}
 	}
-});
+} );
 
 // Change the panel based upon an external link click
 $document.on( "click", ".wb-tabs-ext", function( event ) {
@@ -10704,12 +10673,12 @@ $document.on( "click", ".wb-tabs-ext", function( event ) {
 		event.preventDefault();
 		onSelect( event.currentTarget.getAttribute( "href" ).substring( 1 ) );
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Text highlighting
@@ -10717,7 +10686,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /*
@@ -10746,7 +10715,7 @@ var componentName = "wb-txthl",
 
 		if ( elm ) {
 			if ( event.txthl ) {
-				searchCriteria = $.isArray(event.txthl) ? event.txthl.join( "|" ) : event.txthl;
+				searchCriteria = $.isArray( event.txthl ) ? event.txthl.join( "|" ) : event.txthl;
 			} else if ( params && params.txthl ) {
 				searchCriteria = decodeURIComponent(
 					wb.pageUrlParts.params.txthl
@@ -10760,8 +10729,8 @@ var componentName = "wb-txthl",
 				searchCriteria = "(?=([^>]*<))([\\s'])?(" + searchCriteria + ")(?!>)";
 
 				newText = elm.innerHTML.replace( new RegExp( searchCriteria, "gi" ), function( match, group1, group2, group3 ) {
-					return ( !group2 ? "" : group2 ) + "<span class='txthl'><mark>" + group3 + "</mark></span>";
-				});
+					return ( !group2 ? "" : group2 ) + "<mark class='txthl'>" + group3 + "</mark>";
+				} );
 				elm.innerHTML = newText;
 			}
 
@@ -10776,7 +10745,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );
 
 /**
  * @title WET-BOEW Toggle
@@ -10784,7 +10753,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @patheard
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -10841,6 +10810,10 @@ var componentName = "wb-toggle",
 				initPrint( $link, data );
 			}
 
+			if ( data.state ) {
+				setState( $link, data, data.state );
+			}
+
 			// Identify that initialization has completed
 			wb.ready( $link, componentName );
 		}
@@ -10862,7 +10835,14 @@ var componentName = "wb-toggle",
 
 			// Check that the tablist widget hasn't already been initialized
 			if ( parent.getAttribute( "role" ) !== "tablist" ) {
-				parent.setAttribute( "role", "tablist" );
+
+				// Only apply the tablist role if the parent is not the tabbed interface container
+				// or the page is currently in "smallview", "xsmallview" or "xxsmallview"
+				if ( parent.className.indexOf( "wb-tabs" ) === -1 ||
+					document.documentElement.className.indexOf( "smallview" ) !== -1 ) {
+					parent.setAttribute( "role", "tablist" );
+				}
+
 				elms = parent.querySelectorAll( data.group );
 				tabs = parent.querySelectorAll( data.group + " " + selectorTab );
 
@@ -10950,7 +10930,7 @@ var componentName = "wb-toggle",
 
 		$window.on( printEvent, function() {
 			$link.trigger( toggleEvent, $.extend( {}, data, { type: data.print } ) );
-		});
+		} );
 
 		// Fallback for browsers that don't support print events
 		if ( window.matchMedia ) {
@@ -10960,7 +10940,7 @@ var componentName = "wb-toggle",
 					if ( query.matches ) {
 						$window.trigger( printEvent );
 					}
-				});
+				} );
 			}
 		}
 	},
@@ -10970,7 +10950,7 @@ var componentName = "wb-toggle",
 	 * @param {jQuery Event} event The event that triggered this invocation
 	 */
 	click = function( event ) {
-		var $link = $( event.target );
+		var $link = $( event.currentTarget );
 
 		$link.trigger( toggleEvent, $link.data( "toggle" ) );
 		event.preventDefault();
@@ -11015,7 +10995,7 @@ var componentName = "wb-toggle",
 					isOn: false,
 					isTablist: isTablist,
 					elms: $elmsGroup
-				});
+				} );
 
 				// Remove all grouped persistence keys
 				if ( isPersist ) {
@@ -11036,7 +11016,7 @@ var componentName = "wb-toggle",
 				isOn: isToggleOn,
 				isTablist: isTablist,
 				elms: $elms
-			});
+			} );
 
 			// Store the toggle link's current state if persistence is turned on.
 			// Try/catch is required to address exceptions thrown when using BB10 or
@@ -11082,14 +11062,14 @@ var componentName = "wb-toggle",
 			if ( data.isTablist ) {
 
 				// Set the required aria attributes
-				$elms.find( selectorTab ).attr({
+				$elms.find( selectorTab ).attr( {
 					"aria-selected": isOn,
 					tabindex: isOn ? "0" : "-1"
-				});
-				$elms.find( selectorPanel ).attr({
+				} );
+				$elms.find( selectorPanel ).attr( {
 					"aria-hidden": !isOn,
 					"aria-expanded": isOn
-				});
+				} );
 
 				// Check that the top of the open element is in view.
 				if ( isOn && $elms.length === 1 ) {
@@ -11207,7 +11187,7 @@ $document.on( "timerpoke.wb " + initEvent + " " + toggleEvent +
 		init( event );
 		break;
 	}
-});
+} );
 
 $document.on( toggledEvent, "details", toggleDetails );
 
@@ -11261,7 +11241,7 @@ $document.on( "keydown", selectorTab, function( event ) {
 			.children( "summary" )
 				.trigger( setFocusEvent );
 	}
-});
+} );
 
 $document.on( "keydown", selectorPanel, function( event ) {
 
@@ -11273,12 +11253,12 @@ $document.on( "keydown", selectorPanel, function( event ) {
 			.prev()
 				.trigger( setFocusEvent );
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Twitter embedded timeline
@@ -11286,7 +11266,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -11320,7 +11300,7 @@ var componentName = "wb-twitter",
 					// Identify that initialization has completed
 					wb.ready( $( eventTarget ), componentName );
 				}
-			});
+			} );
 		}
 	};
 
@@ -11329,7 +11309,7 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Disable Event
@@ -11337,7 +11317,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @gc
  */
-(function( $, window, wb ) {
+( function( $, window, wb ) {
 "use strict";
 
 /*
@@ -11379,11 +11359,12 @@ var componentName = "wb-disable",
 			try {
 				if ( wb.isDisabled || ( wb.ie && wb.ielt7 ) ) {
 					$html.addClass( "wb-disable" );
-					if ( localStorage ) {
+
+					try {
 
 						// Store preference for WET plugins and polyfills to be disabled in localStorage
-						localStorage.setItem( "wbdisable", "true");
-					}
+						localStorage.setItem( "wbdisable", "true" );
+					} catch ( e ) {}
 
 					// Append the Standard version link
 					li.innerHTML = "<a class='wb-sl' href='" + nQuery + "wbdisable=false'>" + i18n( "wb-enable" ) + "</a>";
@@ -11420,7 +11401,7 @@ $document.on( "timerpoke.wb", selector, init );
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, wb );
+} )( jQuery, window, wb );
 
 /**
  * @title WET-BOEW Focus
@@ -11428,7 +11409,7 @@ wb.add( selector );
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @pjackson28
  */
-(function( $, wb ) {
+( function( $, wb ) {
 "use strict";
 
 var $document = wb.doc,
@@ -11478,7 +11459,7 @@ $document.on( setFocusEvent, function( event ) {
 				.attr( "tabindex", "-1" );
 
 		// Assigns focus to an element (delay allows for revealing of hidden content)
-		setTimeout(function() {
+		setTimeout( function() {
 			$elm.trigger( "focus" );
 
 			var $topBar = $( ".wb-bar-t[aria-hidden=false]" );
@@ -11491,7 +11472,7 @@ $document.on( setFocusEvent, function( event ) {
 			return $elm;
 		}, 100 );
 	}
-});
+} );
 
 // Set focus to the target of a deep link from a different page
 // (helps browsers that can't set the focus on their own)
@@ -11503,7 +11484,7 @@ $window.on( "hashchange", function() {
 	if ( !wb.ignoreHashChange ) {
 		processHash();
 	}
-});
+} );
 
 // Helper for browsers that can't change keyboard and/or event focus on a same page link click
 $document.on( clickEvents, linkSelector, function( event ) {
@@ -11511,13 +11492,13 @@ $document.on( clickEvents, linkSelector, function( event ) {
 
 	// Same page links only
 	if ( testHref.charAt( 0 ) === "#" && !event.isDefaultPrevented() &&
-		( $linkTarget = $( "#" + wb.jqEscape( testHref.substring( 0 ) ) ) ).length !== 0 ) {
-
+		( $linkTarget = $( "#" + wb.jqEscape( testHref.substring( 1 ) ) ) ).length !== 0 ) {
+		wb.ignoreHashChange = true;
 		$linkTarget.trigger( setFocusEvent );
 	}
-});
+} );
 
-})( jQuery, wb );
+} )( jQuery, wb );
 
 /**
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -11527,7 +11508,7 @@ $document.on( clickEvents, linkSelector, function( event ) {
  * @author @duboisp
  *
  */
-(function( $, window, document, wb ) {
+( function( $, window, document, wb ) {
 "use strict";
 
 /**
@@ -11642,7 +11623,7 @@ $document.on( clickEvents, linkSelector, function( event ) {
 			}
 
 			// Load the required dependencies
-			Modernizr.load({
+			Modernizr.load( {
 
 				// For loading multiple dependencies
 				load: deps,
@@ -11651,7 +11632,7 @@ $document.on( clickEvents, linkSelector, function( event ) {
 					// Let's parse the table
 					$( "#" + elmId ).trigger( tableParsingEvent );
 				}
-			});
+			} );
 		}
 	};
 
@@ -11684,7 +11665,7 @@ $document.on( "timerpoke.wb " + initEvent + " " + tableParsingCompleteEvent, sel
 	 * so returning true allows for events to always continue
 	 */
 	return true;
-});
+} );
 
 // Applying the hover, Simulate Column Hovering Effect
 $document.on( "mouseenter focusin", selectorHoverCol, function( event ) {
@@ -11693,7 +11674,7 @@ $document.on( "mouseenter focusin", selectorHoverCol, function( event ) {
 	if ( tblparserCell.col && tblparserCell.col.elem ) {
 		$( tblparserCell.col.elem ).addClass( "table-hover" );
 	}
-});
+} );
 
 // Removing the hover, Simulate Column Hovering Effect
 $document.on( "mouseleave focusout", selectorHoverCol, function( event ) {
@@ -11702,9 +11683,9 @@ $document.on( "mouseleave focusout", selectorHoverCol, function( event ) {
 	if ( tblparserCell.col && tblparserCell.col.elem ) {
 		$( tblparserCell.col.elem ).removeClass( "table-hover" );
 	}
-});
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
 
-})( jQuery, window, document, wb );
+} )( jQuery, window, document, wb );

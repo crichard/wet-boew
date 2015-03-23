@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "id",
 	"lang-native": "Bahasa Indonesia",
+	add: "Menambahkan",
 	all: "Semua",
 	tphp: "Halaman Atas",
 	load: "memuat ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Sebelumnya (tombol panah kiri)",
 	first: "Pertama",
 	last: "Terakhir",
+	page: "Page",
 	"srch-menus": "Cari dari menu",
 	email: "Email",
 	"menu-close": "Tutup menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Timur",
 	"geo-aoi-south": "Selatan",
 	"geo-aoi-west": "Barat",
-	"geo-aoi-instructions": "Menggambarkan sebuah area pada peta atau masukkan rincian di bawah ini kemudian klik pada \"Menarik\" tombol.",
+	"geo-aoi-instructions": "Menggambar kotak pada peta atau masukkan koordinat di bawah ini dan klik tombol \"Add\".",
 	"geo-aoi-btndraw": "Menarik",
 	"geo-aoi-btnclear": "Menghapus",
 	"geo-geoloc-btn": "Zoom ke lokasi saat ini",
 	"geo-geoloc-fail": "Lokalisasi gagal. Pastikan bahwa layanan lokasi diaktifkan.",
 	"geo-geoloc-uncapable": "Lokalisasi tidak didukung oleh browser Anda.",
+	"geo-lgnd-grphc": "Legenda grafis untuk layer peta.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versi HTML dasar",
 	"wb-enable": "Versi standar",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Masuk"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

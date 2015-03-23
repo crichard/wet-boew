@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "el",
 	"lang-native": "Ελληνικά",
+	add: "Προσθήκη",
 	all: "Όλα",
 	tphp: "Επιστροφή στην αρχή της σελίδα",
 	load: "φόρτωση ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Προηγούμενος (αριστερό πλήκτρο βέλους)",
 	first: "Πρώτα",
 	last: "Τελευταίος",
+	page: "Page",
 	"srch-menus": "Αναζήτηση και μενού",
 	email: "E-mail",
 	"menu-close": "Κλείστε το μενού",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Ανατολή",
 	"geo-aoi-south": "Νότια",
 	"geo-aoi-west": "Δύση",
-	"geo-aoi-instructions": "Σκιαγραφούν μια περιοχή στο χάρτη ή πληκτρολογήστε τις λεπτομέρειες παρακάτω&#44; στη συνέχεια&#44; κάντε κλικ στο κουμπί \"Κλήρωση\".",
+	"geo-aoi-instructions": "Σχεδιάστε το πλαίσιο στο χάρτη ή πληκτρολογήστε τις συντεταγμένες παρακάτω και κάντε κλικ στο κουμπί \"Προσθήκη\".",
 	"geo-aoi-btndraw": "Κλήρωση",
 	"geo-aoi-btnclear": "Κατάργηση",
 	"geo-geoloc-btn": "Ζουμ στην τρέχουσα θέση",
 	"geo-geoloc-fail": "Τοποθεσία απέτυχε. Παρακαλούμε βεβαιωθείτε ότι οι υπηρεσίες τοποθεσίας ενεργοποιημένη.",
 	"geo-geoloc-uncapable": "Localization δεν υποστηρίζεται από το πρόγραμμα περιήγησής σας.",
+	"geo-lgnd-grphc": "Γραφικό Υπόμνημα για χάρτη στρώμα.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Βασικές έκδοση HTML",
 	"wb-enable": "Βασική έκδοση",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Σύνδεση Σε"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "et",
 	"lang-native": "Eesti keel",
+	add: "Lisama",
 	all: "Kõik",
 	tphp: "Lehekülje algusesse",
 	load: "laadimine....",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Eelmine (vasakut nooleklahvi)",
 	first: "Esimene",
 	last: "Viimane",
+	page: "Page",
 	"srch-menus": "Otsi ja menüüd",
 	email: "E-post",
 	"menu-close": "Sulge menüü",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Ida",
 	"geo-aoi-south": "lõuna",
 	"geo-aoi-west": "Lääs",
-	"geo-aoi-instructions": "Piiritleda ala kaardil või sisesta allpool ja siis vajuta \"Joonistama\" nuppu.",
+	"geo-aoi-instructions": "Joonista kasti kaardil või sisesta koordinaadid ja klikkige \"Lisa\" nuppu.",
 	"geo-aoi-btndraw": "Joonistama",
 	"geo-aoi-btnclear": "Eemaldama",
 	"geo-geoloc-btn": "Suumi elemente",
 	"geo-geoloc-fail": "Asukoht ei ole. Palun veenduge, et asukoha määramise teenuste on lubatud.",
 	"geo-geoloc-uncapable": "Lokaliseerimine ei toeta teie brauser.",
+	"geo-lgnd-grphc": "Legend graafika kaardi kiht.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Lihtsustatud HTML versioon",
 	"wb-enable": "Standardversioon",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Logi sisse"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

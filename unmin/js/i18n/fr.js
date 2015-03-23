@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "fr",
 	"lang-native": "Français",
+	add: "Ajouter",
 	all: "Tous",
 	tphp: "Haut de la page",
 	load: "chargement...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Précédent (touche gauche)",
 	first: "Premier",
 	last: "Dernier",
+	page: "Page",
 	"srch-menus": "Recherche et menus",
 	email: "Courriel",
 	"menu-close": "Fermer le menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Est",
 	"geo-aoi-south": "Sud",
 	"geo-aoi-west": "Ouest",
-	"geo-aoi-instructions": "Délimiter un territoire sur la carte ou entrer les coordonnées ci-dessous, puis cliquer sur le bouton &#171;&#160;Tracer&#160;&#187;.",
+	"geo-aoi-instructions": "Délimiter un territoire sur la carte ou entrer les coordonnées ci-dessous, puis cliquer sur le bouton &#171;&#160;Ajouter&#160;&#187;.",
 	"geo-aoi-btndraw": "Tracer",
 	"geo-aoi-btnclear": "Enlever",
 	"geo-geoloc-btn": "Zoom sur votre position actuelle",
 	"geo-geoloc-fail": "Localisation a échoué. S'il vous plaît s'assurer que les services de localisation sont activés.",
 	"geo-geoloc-uncapable": "Localisation n'est pas supporté par votre navigateur.",
+	"geo-lgnd-grphc": "Graphique légende couche cartographique.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Version HTML simplifiée",
 	"wb-enable": "Version standard",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Ouvrir une session"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

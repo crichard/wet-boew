@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "is",
 	"lang-native": "Íslenska",
+	add: "Bæta",
 	all: "Allt",
 	tphp: "Efst á síðu",
 	load: "hleðsla ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Fyrri (vinstri ör lykill)",
 	first: "First",
 	last: "Síðasta",
+	page: "Page",
 	"srch-menus": "Leit og valmyndir",
 	email: "Email",
 	"menu-close": "Loka valmynd",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Austur",
 	"geo-aoi-south": "Suður",
 	"geo-aoi-west": "Vestur",
-	"geo-aoi-instructions": "Afmarka svæði á kortinu eða slá inn upplýsingar hér að neðan og smelltu á \"Draga\" hnappinn.",
+	"geo-aoi-instructions": "Draw kassi á kortið eða sláðu hnit neðan og smelltu á \"Bæta við\" hnappinn.",
 	"geo-aoi-btndraw": "Draga",
 	"geo-aoi-btnclear": "Fjarlægja",
 	"geo-geoloc-btn": "Aðdráttur til núverandi staðsetningu",
 	"geo-geoloc-fail": "Staðsetning mistókst. Skaltu tryggja að staðsetningu þjónustu eru virk.",
 	"geo-geoloc-uncapable": "Staðsetning er ekki stutt af vafranum þínum.",
+	"geo-lgnd-grphc": "Legend grafík fyrir kortinu lag.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Undirstöðu HTML útgáfa",
 	"wb-enable": "Standard útgáfa",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Skrá inn"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

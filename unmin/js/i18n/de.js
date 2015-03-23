@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "de",
 	"lang-native": "Deutsch",
+	add: "Hinzufügen",
 	all: "Alle",
 	tphp: "Zum Seitenanfang",
 	load: "Be ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Früher (linke Pfeiltaste)",
 	first: "Erste",
 	last: "Letzte",
+	page: "Page",
 	"srch-menus": "Suche und Menüs",
 	email: "E-Mail",
 	"menu-close": "Schließen Sie das Menü",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Osten",
 	"geo-aoi-south": "Süden",
 	"geo-aoi-west": "Westen",
-	"geo-aoi-instructions": "Beschreiben eine Fläche auf der Karte oder geben Sie die Details klicken dann auf die Schaltfläche \"Ziehen\".",
+	"geo-aoi-instructions": "Zeichnen Feld auf der Karte oder geben Sie die Koordinaten ein und klicken Sie auf \"Hinzufügen\".",
 	"geo-aoi-btndraw": "Ziehen",
 	"geo-aoi-btnclear": "Entfernen",
 	"geo-geoloc-btn": "Zoom auf die aktuelle Lage",
 	"geo-geoloc-fail": "Lage fehlgeschlagen. Bitte stellen Sie sicher, dass die Ortungsdienste aktiviert sind.",
 	"geo-geoloc-uncapable": "Der Ort ist nicht von Ihrem Browser unterstützt.",
+	"geo-lgnd-grphc": "Legende Grafik für Karten-Layer.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Grundlegende HTML-Version",
 	"wb-enable": "Standardausführung",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Login"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

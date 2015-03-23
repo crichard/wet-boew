@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "lv",
 	"lang-native": "Latviešu valoda",
+	add: "Pievienot",
 	all: "Visi",
 	tphp: "Lapas augša",
 	load: "ielādēšana ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Lepriekšējais (pa kreisi bulta taustiņu)",
 	first: "Pirmā",
 	last: "Pēdējā",
+	page: "Page",
 	"srch-menus": "Meklēšanas un ēdienkartes",
 	email: "e-pasts",
 	"menu-close": "Aizveriet izvēlni",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Austrumi",
 	"geo-aoi-south": "Dienvidu",
 	"geo-aoi-west": "Rietumi",
-	"geo-aoi-instructions": "Uzmest platību kartē vai ievadiet informāciju zemāk&#44; tad uzklikšķiniet uz \"Izdarīt\" pogu.",
+	"geo-aoi-instructions": "Zīmēt rūtiņu uz kartes vai ievadīt koordinātas zemāk un noklikšķiniet uz pogas \"Pievienot\".",
 	"geo-aoi-btndraw": "Izdarīt",
 	"geo-aoi-btnclear": "Noņemt",
 	"geo-geoloc-btn": "Zoom uz pašreizējo atrašanās vietu",
 	"geo-geoloc-fail": "Atrašanās vieta neizdevās. Lūdzu, pārliecinieties, ka uz atrašanās vietas pakalpojumi tiek iespējots.",
 	"geo-geoloc-uncapable": "Lokalizācija neatbalsta pārlūkprogramma.",
+	"geo-lgnd-grphc": "Leģenda grafiskais attiecīgā karte slāni.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Pamata HTML versija",
 	"wb-enable": "Standarta versija",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Pierakstīties"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

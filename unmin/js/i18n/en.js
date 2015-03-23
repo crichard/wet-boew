@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "en",
 	"lang-native": "English",
+	add: "Add",
 	all: "All",
 	tphp: "Top of page",
 	load: "loading...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Previous (left arrow key)",
 	first: "First",
 	last: "Last",
+	page: "Page",
 	"srch-menus": "Search and menus",
 	email: "Email",
 	"menu-close": "Close menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "East",
 	"geo-aoi-south": "South",
 	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the \"Draw\" button.",
+	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the \"Add\" button.",
 	"geo-aoi-btndraw": "Draw",
 	"geo-aoi-btnclear": "Clear",
 	"geo-geoloc-btn": "Zoom to current location",
 	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
 	"geo-geoloc-uncapable": "Geolocation is not supported by your browser.",
+	"geo-lgnd-grphc": "Legend graphic for map layer.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Basic HTML version",
 	"wb-enable": "Standard version",
@@ -213,4 +216,4 @@ wb.i18nDict = {
 	"tmpl-signin": "Sign in"
 };
 
-})( wb );
+} )( wb );

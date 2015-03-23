@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "af",
 	"lang-native": "Afrikaans",
+	add: "Voeg",
 	all: "Alle",
 	tphp: "Top van die bladsy",
 	load: "loading ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Vorige (links pyltjie sleutel)",
 	first: "Eerste",
 	last: "Laaste",
+	page: "Page",
 	"srch-menus": "Soek en spyskaarte",
 	email: "Stuur 'n e-pos aan",
 	"menu-close": "Maak die menu",
@@ -206,6 +208,7 @@ wb.i18nDict = {
 	"geo-geoloc-btn": "Zoom in jou huidige posisie",
 	"geo-geoloc-fail": "Plek gefaal het. Maak asseblief seker dat plek dienste word aangeskakel.",
 	"geo-geoloc-uncapable": "Lokalisering word nie ondersteun deur die leser.",
+	"geo-lgnd-grphc": "Legende grafiese vir kaart laag.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Basiese HTML-weergawe",
 	"wb-enable": "Standaard weergawe",
@@ -213,4 +216,4 @@ wb.i18nDict = {
 	"tmpl-signin": "Teken In"
 };
 
-})( wb );
+} )( wb );

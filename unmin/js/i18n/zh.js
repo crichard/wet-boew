@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "zh",
 	"lang-native": "繁體字",
+	add: "添加",
 	all: "全部",
 	tphp: "頁首",
 	load: "下載中…",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "上一筆（左箭頭鍵）",
 	first: "第一筆",
 	last: "最後一筆",
+	page: "Page",
 	"srch-menus": "搜索和菜單",
 	email: "電子郵件",
 	"menu-close": "關閉菜單",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "東方",
 	"geo-aoi-south": "南",
 	"geo-aoi-west": "西方",
-	"geo-aoi-instructions": "在地圖上劃定一個區域或輸入下面的詳細信息，然後點擊“畫”按鈕。",
+	"geo-aoi-instructions": "抽獎箱在地圖上或在下方輸入坐標，然後點擊“添加”按鈕。",
 	"geo-aoi-btndraw": "畫",
 	"geo-aoi-btnclear": "清除",
 	"geo-geoloc-btn": "放大到當前位置",
 	"geo-geoloc-fail": "位置失敗。請確保該位置的服務被啟用。",
 	"geo-geoloc-uncapable": "本地化不是由您的瀏覽器支持。",
+	"geo-lgnd-grphc": "傳說中的圖形在地圖圖層。",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "基本HTML版本",
 	"wb-enable": "標準版本",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "登入"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

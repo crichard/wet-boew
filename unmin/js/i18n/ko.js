@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "ko",
 	"lang-native": "한국어",
+	add: "추가",
 	all: "모든",
 	tphp: "맨 위로",
 	load: "로드 중 ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "이전 (왼쪽 화살표 키)",
 	first: "처음으로",
 	last: "마지막",
+	page: "Page",
 	"srch-menus": "검색 및 메뉴",
 	email: "이메일",
 	"menu-close": "메뉴를 닫습니다",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "동쪽",
 	"geo-aoi-south": "남쪽으로",
 	"geo-aoi-west": "서쪽",
-	"geo-aoi-instructions": "지도에서 지역을 묘사하거나 아래의 정보를 입력 한 후 \"무승부\"버튼을 클릭합니다.",
+	"geo-aoi-instructions": "지도에 상자를 그리거나 아래 좌표를 입력하고 \"추가\"버튼을 클릭합니다.",
 	"geo-aoi-btndraw": "무승부",
 	"geo-aoi-btnclear": "제거",
 	"geo-geoloc-btn": "현재 위치로 확대",
 	"geo-geoloc-fail": "위치에 실패했습니다. 위치 서비스가 활성화되어 있는지 확인하십시오.",
 	"geo-geoloc-uncapable": "현지화는 브라우저에서 지원되지 않습니다.",
+	"geo-lgnd-grphc": "지도 계층에 대한 전설 그래픽.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "기본 HTML 버전",
 	"wb-enable": "표준 버전",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "로그인"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

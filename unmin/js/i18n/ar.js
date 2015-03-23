@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "ar",
 	"lang-native": "العربية",
+	add: "إضافة",
 	all: "جميع",
 	tphp: "أعلى الصفحة",
 	load: "   تحميل ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "مفتاح السهم الأيسر - سابق",
 	first: "الأول",
 	last: "آخر",
+	page: "Page",
 	"srch-menus": "البحث والقوائم",
 	email: "البريد الإلكتروني",
 	"menu-close": "إغلاق القائمة",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "شرق",
 	"geo-aoi-south": "جنوب",
 	"geo-aoi-west": "غرب",
-	"geo-aoi-instructions": "تحدد مساحة على الخريطة أو أدخل التفاصيل أدناه ثم انقر على زر \"رسم\".",
+	"geo-aoi-instructions": "مربع رسم على الخريطة أو أدخل إحداثيات أدناه وانقر على زر \"إضافة\".",
 	"geo-aoi-btndraw": "رسم",
 	"geo-aoi-btnclear": "نزع",
 	"geo-geoloc-btn": "التكبير لموقعك الحالي",
 	"geo-geoloc-fail": "فشل الموقع. يرجى التأكد من أن يتم تمكين خدمات الموقع.",
 	"geo-geoloc-uncapable": "غير معتمد التعريب بواسطة المتصفح الخاص بك.",
+	"geo-lgnd-grphc": "رسم خريطة لأسطورة طبقة.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "إصدار HTML الأساسي",
 	"wb-enable": "الإصدار القياسي",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "تسجيل الدخول"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

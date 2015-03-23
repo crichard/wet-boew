@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "sk",
 	"lang-native": "Slovenčina",
+	add: "Pridať",
 	all: "Všetko",
 	tphp: "Na začiatok stránky",
 	load: "nakladanie ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Predchádzajúci (klávesy šípka doľava)",
 	first: "Prvé",
 	last: "Posledný",
+	page: "Page",
 	"srch-menus": "Vyhľadávanie a ponuky",
 	email: "E-mail",
 	"menu-close": "Zavrite menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Východ",
 	"geo-aoi-south": "Na juh",
 	"geo-aoi-west": "Západ",
-	"geo-aoi-instructions": "Vymedziť oblasť na mape alebo zadajte údaje nižšie a potom kliknite na tlačidlo \"Kresliť\".",
+	"geo-aoi-instructions": "Nakreslite rámček na mape alebo zadajte súradnice nižšie a kliknite na tlačidlo \"Pridať\".",
 	"geo-aoi-btndraw": "Kresliť",
 	"geo-aoi-btnclear": "Odstrániť",
 	"geo-geoloc-btn": "Priblížiť sa k aktuálnej polohe",
 	"geo-geoloc-fail": "Lokalita zlyhalo. Uistite sa, že umiestnenie služby sú povolené.",
 	"geo-geoloc-uncapable": "Lokalizácia nie je podporovaná vo vašom prehliadači.",
+	"geo-lgnd-grphc": "Legenda grafický pre mapovú vrstvu.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Základné HTML verzia",
 	"wb-enable": "Štandardná verzia",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Prihlásiť"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

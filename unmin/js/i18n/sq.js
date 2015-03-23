@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "sq",
 	"lang-native": "Shqip",
+	add: "Shtoj",
 	all: "Të gjithë",
 	tphp: "Fillimi i faqes",
 	load: "ngarkimin ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "I mëparshëm (kyç majtë arrow)",
 	first: "I parë",
 	last: "I fundit",
+	page: "Page",
 	"srch-menus": "Kërko dhe menutë",
 	email: "Email",
 	"menu-close": "Mbylle menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Lindja",
 	"geo-aoi-south": "Jug",
 	"geo-aoi-west": "Perëndimi",
-	"geo-aoi-instructions": "Përshkruaj një zonë në hartë ose të hyjë në detajet më poshtë pastaj klikoni mbi \"Barazim\" button.",
+	"geo-aoi-instructions": "Teken boks op kaart of ingaan koördinate hieronder en klik op die knoppie \"Voeg deur\".",
 	"geo-aoi-btndraw": "Barazim",
 	"geo-aoi-btnclear": "Heq",
 	"geo-geoloc-btn": "Zoom në pozicionin juaj e tanishme",
 	"geo-geoloc-fail": "Vendndodhja dështuar. Ju lutemi të sigurojë që shërbimet lokacioni janë të aktivizuara.",
 	"geo-geoloc-uncapable": "Lokalizimi nuk mbështetet nga browseri juaj.",
+	"geo-lgnd-grphc": "Legjenda grafik për shtresë hartë.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versioni bazë HTML",
 	"wb-enable": "Versioni standard",
@@ -213,4 +216,4 @@ wb.i18nDict = {
 	"tmpl-signin": "Kyqeni në"
 };
 
-})( wb );
+} )( wb );

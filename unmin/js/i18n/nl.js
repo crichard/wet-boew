@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "nl",
 	"lang-native": "Nederlands",
+	add: "Toevoegen",
 	all: "Allen",
 	tphp: "Bovenkant pagina",
 	load: "het laden van ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Vorige (linkse pijlen-toets)",
 	first: "Eerste",
 	last: "Laatste",
+	page: "Page",
 	"srch-menus": "Zoeken en menu's",
 	email: "E-mail",
 	"menu-close": "Sluit het menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Oosten",
 	"geo-aoi-south": "Zuiden",
 	"geo-aoi-west": "Westen",
-	"geo-aoi-instructions": "Bakenen een gebied op de kaart of voer de onderstaande informatie in en klik op de \"Trekken\" button.",
+	"geo-aoi-instructions": "Bakenen een gebied op de kaart of voer de onderstaande informatie in en klik op de \"Toevoegen\" button.",
 	"geo-aoi-btndraw": "Trekken",
 	"geo-aoi-btnclear": "Verwijderen",
 	"geo-geoloc-btn": "Zoomen naar onderdeel",
 	"geo-geoloc-fail": "Locatie mislukt. Zorg ervoor dat locatiediensten zijn ingeschakeld.",
 	"geo-geoloc-uncapable": "Lokalisatie wordt niet ondersteund door uw browser.",
+	"geo-lgnd-grphc": "Legende grafische kaart voor laag.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versie in basis-HTML",
 	"wb-enable": "Standaardversie",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Aanmelden"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

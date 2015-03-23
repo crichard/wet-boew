@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "cs",
 	"lang-native": "Čeština",
+	add: "Přidat",
 	all: "Vše",
 	tphp: "Na začátek stránky",
 	load: "nakládání ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Předchozí (klávesy šipka vpravo)",
 	first: "První",
 	last: "Poslední",
+	page: "Page",
 	"srch-menus": "Vyhledávání a nabídky",
 	email: "Emailová",
 	"menu-close": "Zavřete menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Východ",
 	"geo-aoi-south": "Na jih",
 	"geo-aoi-west": "Západ",
-	"geo-aoi-instructions": "Vymezit oblast na mapě nebo zadejte údaje níže a poté klikněte na tlačítko \"Kreslit\".",
+	"geo-aoi-instructions": "Vymezit oblast na mapě nebo zadejte údaje níže a poté klikněte na tlačítko \"Přidat\".",
 	"geo-aoi-btndraw": "Kreslit",
 	"geo-aoi-btnclear": "Odstranit",
 	"geo-geoloc-btn": "Přiblížit se k aktuální poloze",
 	"geo-geoloc-fail": "Lokalita se nezdařilo. Ujistěte se, že umístění služby jsou povoleny.",
 	"geo-geoloc-uncapable": "Lokalizace není podporována ve vašem prohlížeči.",
+	"geo-lgnd-grphc": "Legenda grafický pro mapovou vrstvu.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Základní HTML verze",
 	"wb-enable": "Standardní verze",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Přihlásit"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

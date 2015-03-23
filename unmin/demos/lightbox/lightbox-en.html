@@ -119,15 +119,15 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<nav role="navigation" id="wb-sm" data-ajax-fetch="../../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 		<div class="container nvbar">
 	<h2>Topics menu</h2>
-    <div class="row">
-        <ul class="list-inline menu">
+	<div class="row">
+		<ul class="list-inline menu">
 
 			<li><a href="../../index-en.html">WET project</a></li>
 			<li><a href="../../docs/start-en.html#implement">Implement WET</a></li>
 			<li><a href="../../docs/start-en.html">Contribute to WET</a></li>
 
-        </ul>
-    </div>
+		</ul>
+	</div>
 </div>
 
 	</nav>
@@ -226,9 +226,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 					<a class="wb-lbx" title="AJAX - Example 1 of AJAX content" href="ajax/ajax1-en.html">AJAX - Example 1</a>
 				</li>
 				<li>
-					<a class="wb-lbx" title="AJAX - Example of Multimedia Player" href="ajax/video-en.html">AJAX - Video</a>
-				</li>
-				<li>
 					AJAX - override default behaviour of image link with lbx-ajax<br />
 					<a class="wb-lbx lbx-ajax" title="AJAX - Example 1 of AJAX content" href="ajax/ajax1-en.html"><img src="demo/1_s.jpg" alt="Image 1" /></a>
 				</li>
@@ -302,13 +299,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		&lt;a class="wb-lbx" title="AJAX - Example 1 of AJAX content" href="ajax/ajax-en.html"&gt;AJAX - Example 1&lt;/a&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
-		&lt;a class="wb-lbx" title="AJAX - Example of Multimedia Player" href="ajax/video.html"&gt;AJAX - Video&lt;/a&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		AJAX - override default behaviour of image link with lbx-ajax&lt;br /&gt;
-		&lt;a class="wb-lbx lbx-ajax" title="AJAX - Example 1 of AJAX content" href="ajax/ajax1-en.html"&gt;&lt;img src="demo/1_s.jpg" alt="Image 1" /&gt;&lt;/a&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
 		&lt;a class="wb-lbx" title="Example of inline content" href="#inline_content"&gt;Inline content&lt;/a&gt;
 		&lt;section id="inline_content" class="mfp-hide modal-dialog modal-content overlay-def"&gt;
 			&lt;header class="modal-header"&gt;
@@ -331,16 +321,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 			&lt;/div&gt;
 		&lt;/section&gt;
 	&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
-// JavaScript code required to initialise multimedia player in lightbox
-$( ".wb-lbx" ).on( "mfpAjaxContentAdded", function(e) {
-	setTimeout(function() {
-        $( ".mfp-content" ).find( ".wb-mltmd" ).trigger( "wb-init.wb-mltmd" );
-    }, 0);
-});
-&lt;/script&gt;
-</code></pre>
+&lt;/ul&gt;</code></pre>
 				</details>
 			</section>
 		</section>
@@ -734,7 +715,7 @@ $document.on( &quot;click vclick&quot;, &quot;#lbx-open-btn&quot;, function( eve
 	<h3>About</h3>
 	<ul class="list-unstyled">
 		<li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
-		<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+		<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 	</ul>
 </section>
 <section class="col-sm-3">
@@ -747,7 +728,7 @@ $document.on( &quot;click vclick&quot;, &quot;#lbx-open-btn&quot;, function( eve
 <section class="col-sm-3">
 	<h3>Stay connected</h3>
 	<ul class="list-unstyled">
-		<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+		<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 	</ul>
 </section>
 
@@ -762,6 +743,7 @@ $document.on( &quot;click vclick&quot;, &quot;#lbx-open-btn&quot;, function( eve
 <!--<![endif]-->
 <!--[if lt IE 9]>
 <script src="../../js/ie8-wet-boew2.js"></script>
+
 <![endif]-->
 <script src="demo/lightbox.js"></script>
 

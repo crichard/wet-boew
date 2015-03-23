@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "es",
 	"lang-native": "Español",
+	add: "Añadir",
 	all: "Todo",
 	tphp: "Arriba",
 	load: "cargando …",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Anterior (tecla flecha izquierda)",
 	first: "Primero",
 	last: "Último",
+	page: "Page",
 	"srch-menus": "Búsqueda y menús",
 	email: "Correo electrónico",
 	"menu-close": "Cierre el menú",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Este",
 	"geo-aoi-south": "Sur",
 	"geo-aoi-west": "Oeste",
-	"geo-aoi-instructions": "Delimitar una zona en el mapa o rellene el formulario a continuación&#44; haga clic en el botón \"Dibujar\".",
+	"geo-aoi-instructions": "Delimitar una zona en el mapa o rellene el formulario a continuación&#44; haga clic en el botón \"Añadir\".",
 	"geo-aoi-btndraw": "Dibujar",
 	"geo-aoi-btnclear": "Eliminar",
 	"geo-geoloc-btn": "Aumentar la ubicación actual",
 	"geo-geoloc-fail": "Ubicación falló. Por favor asegúrese de que los servicios de localización están habilitados.",
 	"geo-geoloc-uncapable": "Localización puede no ser compatible con su navegador.",
+	"geo-lgnd-grphc": "Gráfico leyenda para la capa de mapa.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versión HTML básica",
 	"wb-enable": "Versión estándar",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Iniciar sesión"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

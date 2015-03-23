@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "uk",
 	"lang-native": "Українська мова",
+	add: "додавати",
 	all: "Все",
 	tphp: "На початок сторінки",
 	load: "Завантаження ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Попередній (клавішею ліва стрілка)",
 	first: "Перший",
 	last: "Oстанній",
+	page: "Page",
 	"srch-menus": "Пошук і меню",
 	email: "Електронна пошта",
 	"menu-close": "Закрийте меню",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Схід",
 	"geo-aoi-south": "Південь",
 	"geo-aoi-west": "Захід",
-	"geo-aoi-instructions": "Окреслити площа на карті або заповніть форму і натисніть на кнопку \"Малювати\".",
+	"geo-aoi-instructions": "Намалюйте вікно на карті або введіть координати нижче і натисніть кнопку \"Додати\".",
 	"geo-aoi-btndraw": "Малювати",
 	"geo-aoi-btnclear": "Видаляти",
 	"geo-geoloc-btn": "Збільшити до поточного розташування",
 	"geo-geoloc-fail": "Розташування не вдалося. Будь ласка, переконайтеся, що послуги визначення місця розташування включені.",
 	"geo-geoloc-uncapable": "Локалізація не підтримується браузером.",
+	"geo-lgnd-grphc": "Легенда графіка для шару карти.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Базова версія HTML",
 	"wb-enable": "Стандартна версія",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Увійти"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

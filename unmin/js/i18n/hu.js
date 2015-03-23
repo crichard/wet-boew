@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "hu",
 	"lang-native": "Magyar",
+	add: "Hozzáad",
 	all: "Mind",
 	tphp: "Oldal teteje",
 	load: "betöltése ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Előző (bal nyíl gomb)",
 	first: "Első",
 	last: "Utolsó",
+	page: "Page",
 	"srch-menus": "Keresés és menük",
 	email: "Email",
 	"menu-close": "Zárja be a menüt",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Kelet",
 	"geo-aoi-south": "Dél",
 	"geo-aoi-west": "Nyugat",
-	"geo-aoi-instructions": "Ismertesse a terület a térképen&#44; vagy írja be az alábbi adatokat&#44; majd kattintson a \"Rajzol\" gombra.",
+	"geo-aoi-instructions": "Döntetlen box a térképen vagy adja meg a koordinátákat, majd kattintson a \"Hozzáadás\" gombra.",
 	"geo-aoi-btndraw": "Rajzol",
 	"geo-aoi-btnclear": "Eltávolít",
 	"geo-geoloc-btn": "Nagyítás az aktuális helyre",
 	"geo-geoloc-fail": "Hely sikerült. Ügyeljen arra, hogy a helymeghatározó szolgáltatások engedélyezve vannak.",
 	"geo-geoloc-uncapable": "A honosítás nem támogatja a böngészője.",
+	"geo-lgnd-grphc": "Legend grafika térképen réteg.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Egyszerű HTML verzió",
 	"wb-enable": "Standard verzió",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Bejelentkezés"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

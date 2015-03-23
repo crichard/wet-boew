@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "pt",
 	"lang-native": "Português",
+	add: "Adicionar",
 	all: "Todos",
 	tphp: "Início da Página",
 	load: "carregamento ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "Anterior (tecla seta para a esquerda)",
 	first: "Primeiro",
 	last: "Último",
+	page: "Page",
 	"srch-menus": "Pesquisa e menus",
 	email: "Correio eletrônico",
 	"menu-close": "Fechar o menu",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "Leste",
 	"geo-aoi-south": "Sul",
 	"geo-aoi-west": "Ocidente",
-	"geo-aoi-instructions": "Delinear uma área no mapa ou digite os detalhes abaixo&#44; em seguida&#44; clique no botão \"Desenhar\".",
+	"geo-aoi-instructions": "Caixa Desenhe no mapa ou inserir coordenadas abaixo e clique no botão \"Adicionar\".",
 	"geo-aoi-btndraw": "Desenhar",
 	"geo-aoi-btnclear": "Remover",
 	"geo-geoloc-btn": "Zoom para o local atual",
 	"geo-geoloc-fail": "Localização falhou. Certifique-se que os serviços de localização estão habilitados.",
 	"geo-geoloc-uncapable": "A localização não é suportado pelo seu navegador.",
+	"geo-lgnd-grphc": "Gráfico Legend para a camada mapa.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versão HTML simplificada",
 	"wb-enable": "Versão padrão",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "Entrar"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 

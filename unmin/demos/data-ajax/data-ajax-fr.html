@@ -118,15 +118,15 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<nav role="navigation" id="wb-sm" data-ajax-fetch="../../ajax/sitemenu-fr.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 		<div class="container nvbar">
 	<h2>Menu des sujets</h2>
-    <div class="row">
-        <ul class="list-inline menu">
+	<div class="row">
+		<ul class="list-inline menu">
 
 			<li><a href="../../index-fr.html">Projet de la BOEW</a></li>
 			<li><a href="../../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
 			<li><a href="../../docs/start-fr.html">Contribuer à la BOEW</a></li>
 
-        </ul>
-    </div>
+		</ul>
+	</div>
 </div>
 
 	</nav>
@@ -183,7 +183,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <p>Un enveloppeur simple pour AjaxLoader qui insère de contenu télécharger via AJAX.</p>
 
 <section class="wb-prettify all-pre">
-	<h2>Insérer du contenu après un élément (data-ajax-after)</h2>
+	<h2>Insérer du contenu après un élément (<code>data-ajax-after</code>)</h2>
 	<section>
 		<h3>Exemple</h3>
 		<section data-ajax-after="ajax/data-ajax-extra-fr.html" class="original">
@@ -228,7 +228,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </section>
 
 <section>
-	<h2>Ajouter du contenu à la fin d'un élément (data-ajax-append)</h2>
+	<h2>Ajouter du contenu à la fin d'un élément (<code>data-ajax-append</code>)</h2>
 	<section>
 		<h3>Exemple</h3>
 		<div data-ajax-append="ajax/data-ajax-extra-fr.html" class="original">
@@ -269,7 +269,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </section>
 
 <section>
-	<h2>Insérer le contenu avant un élément (data-ajax-before)</h2>
+	<h2>Insérer le contenu avant un élément (<code>data-ajax-before</code>)</h2>
 	<section>
 		<h3>Exemple</h3>
 		<section data-ajax-before="ajax/data-ajax-extra-fr.html" class="original">
@@ -314,7 +314,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </section>
 
 <section>
-	<h2>Ajouter le contenu au début d'un élément (data-ajax-prepend)</h2>
+	<h2>Ajouter le contenu au début d'un élément (<code>data-ajax-prepend</code>)</h2>
 	<section>
 		<h3>Exemple</h3>
 		<div data-ajax-prepend="ajax/data-ajax-extra-fr.html" class="original">
@@ -355,7 +355,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </section>
 
 <section>
-	<h2>Remplace un élément (data-ajax-replace)</h2>
+	<h2>Remplace un élément (<code>data-ajax-replace</code>)</h2>
 	<section>
 		<h3>Exemple</h3>
 		<div data-ajax-replace="ajax/data-ajax-extra-fr.html" class="original">
@@ -407,10 +407,74 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	</section>
 </section>
 
+<section>
+	<h2>Filtrer le contenu par le &#171;&#160;hash&#160;&#187; de l'URL (<code>ajax/data-ajax-filter-fr.html#filter-id</code>, v4.0.12+)</h2>
+	<section>
+		<h3>Exemple</h3>
+		<div data-ajax-append="ajax/data-ajax-filter-fr.html#filter-id" class="original">
+			<p>Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte.</p>
+		</div>
+		<details>
+			<summary>Visualiser le code</summary>
+			<section>
+				<h4>HTML dans la page</h4>
+				<pre><code>&lt;div data-ajax-append="ajax/data-ajax-filter-fr.html#filter-id" class="original"&gt;
+	&lt;p&gt;Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+			</section>
+
+			<section>
+				<h4>data-ajax-filter-fr.html</h4>
+				<pre><code>&lt;section id=&quot;filter-id&quot; class=&quot;ajaxed-in&quot;&gt;
+	&lt;h4&gt;J'ai été affiché via Ajax et après filtrer par le &#171;&#160;hash&#160;&#187; de l'URL&lt;/h4&gt;
+	&lt;p&gt;J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;ajaxed-in filter-selector&quot;&gt;
+	&lt;h4&gt;J'ai été affiché via Ajax et après filtrer par selecteur&lt;/h4&gt;
+	&lt;p&gt;J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+			</section>
+		</details>
+	</section>
+</section>
+
+<section>
+	<h2>Filtrer le contenu par un selecteur (<code>ajax/data-ajax-filter-fr.html .filter-selector</code>, v4.0.12+)</h2>
+	<section>
+		<h3>Exemple</h3>
+		<div data-ajax-append="ajax/data-ajax-filter-fr.html .filter-selector" class="original">
+			<p>Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte.</p>
+		</div>
+		<details>
+			<summary>Visualiser le code</summary>
+			<section>
+				<h4>HTML dans la page</h4>
+				<pre><code>&lt;div data-ajax-append="ajax/data-ajax-filter-fr.html .filter-selector" class="original"&gt;
+	&lt;p&gt;Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte. Exemple de texte.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+			</section>
+
+			<section>
+				<h4>data-ajax-filter-fr.html</h4>
+				<pre><code>&lt;section id=&quot;filter-id&quot; class=&quot;ajaxed-in&quot;&gt;
+	&lt;h4&gt;J'ai été affiché via Ajax et après filtrer par le &#171;&#160;hash&#160;&#187; de l'URL&lt;/h4&gt;
+	&lt;p&gt;J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;ajaxed-in filter-selector&quot;&gt;
+	&lt;h4&gt;J'ai été affiché via Ajax et après filtrer par selecteur&lt;/h4&gt;
+	&lt;p&gt;J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax. J'ai été affiché via Ajax.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+			</section>
+		</details>
+	</section>
+</section>
+
 
 		<dl id="wb-dtmd">
 	<dt>Date de modification&#160;:&#32;</dt>
-	<dd><time property="dateModified">2014-07-19</time></dd>
+	<dd><time property="dateModified">2015-03-09</time></dd>
 </dl>
 
 
@@ -432,7 +496,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<h3>À propos</h3>
 	<ul class="list-unstyled">
 		<li><a href="../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-		<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+		<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 	</ul>
 </section>
 <section class="col-sm-3">
@@ -445,7 +509,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <section class="col-sm-3">
 	<h3>Restez branchés</h3>
 	<ul class="list-unstyled">
-		<li><a href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
+		<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 	</ul>
 </section>
 
@@ -460,6 +524,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <!--<![endif]-->
 <!--[if lt IE 9]>
 <script src="../../js/ie8-wet-boew2.js"></script>
+
 <![endif]-->
 
 

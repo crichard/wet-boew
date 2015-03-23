@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "ja",
 	"lang-native": "日本語",
+	add: "加える",
 	all: "すべて",
 	tphp: "ページの先頭",
 	load: "ロード中･･･",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "前へ（左矢印キー）",
 	first: "最初",
 	last: "最後",
+	page: "Page",
 	"srch-menus": "検索とメニュー",
 	email: "メール",
 	"menu-close": "メニューを閉じる",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "東",
 	"geo-aoi-south": "南",
 	"geo-aoi-west": "西",
-	"geo-aoi-instructions": "地図上の領域の輪郭を描くか、詳細を下記に入力し、「描く」ボタンをクリックしてください。",
+	"geo-aoi-instructions": "Disegnare scatola sulla mappa o inserire le coordinate di sotto e fare clic sul pulsante \"Aggiungi\".",
 	"geo-aoi-btndraw": "描く",
 	"geo-aoi-btnclear": "削除する",
 	"geo-geoloc-btn": "現在の場所にズーム",
 	"geo-geoloc-fail": "場所は、失敗しました。位置情報サービスが有効になっていることを確認してください。",
 	"geo-geoloc-uncapable": "ローカリゼーションは、お使いのブラウザでサポートされていません。",
+	"geo-lgnd-grphc": "マップレイヤの凡例のグラフィック。",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "HTMLベーシック版",
 	"wb-enable": "スタンダード版",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "サインイン"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*

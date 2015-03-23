@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.10-development - 2015-01-14
+ * v4.0.12-development - 2015-03-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -17,6 +17,7 @@
 wb.i18nDict = {
 	"lang-code": "th",
 	"lang-native": "ภาษาไทย",
+	add: "เพิ่ม",
 	all: "ทั้งหมด",
 	tphp: "ด้านบนของหน้า",
 	load: "โหลด ...",
@@ -58,6 +59,7 @@ wb.i18nDict = {
 	"prv-l": "ก่อน (คีย์ลูกศรซ้าย)",
 	first: "แรก",
 	last: "ล่าสุด",
+	page: "Page",
 	"srch-menus": "ค้นหาและเมนู",
 	email: "อีเมล์",
 	"menu-close": "ปิดเมนู",
@@ -200,12 +202,13 @@ wb.i18nDict = {
 	"geo-aoi-east": "ทางทิศตะวันออก",
 	"geo-aoi-south": "ใต้",
 	"geo-aoi-west": "ทิศตะวันตก",
-	"geo-aoi-instructions": "กำหนดพื้นที่บนแผนที่หรือกรอกรายละเอียดด้านล่างนี้แล้วคลิกที่ \"วาด\" ปุ่ม",
+	"geo-aoi-instructions": "วาดกล่องบนแผนที่หรือป้อนพิกัดด้านล่างและคลิกที่ปุ่ม \"เพิ่ม\"",
 	"geo-aoi-btndraw": "วาด",
 	"geo-aoi-btnclear": "เอาออก",
 	"geo-geoloc-btn": "ขยายไปยังสถานที่ปัจจุบัน",
 	"geo-geoloc-fail": "ที่ล้มเหลว โปรดตรวจสอบว่าบริการสถานที่มีการใช้งาน",
 	"geo-geoloc-uncapable": "ท้องถิ่นไม่ได้รับการสนับสนุนโดยเบราว์เซอร์ของคุณ",
+	"geo-lgnd-grphc": "กราฟิกตำนานสำหรับชั้นแผนที่",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "เวอร์ชันพื้นฐานของ HTM​​L",
 	"wb-enable": "รุ่นมาตรฐาน",
@@ -213,7 +216,7 @@ wb.i18nDict = {
 	"tmpl-signin": "เข้าสู่ระบบ"
 };
 
-})( wb );
+} )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
 /*
